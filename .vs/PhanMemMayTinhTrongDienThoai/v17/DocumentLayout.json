@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|solutionrelative:frmmaincalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|d:\\cnpm\\phanmemmaytinhtrongdienthoai\\frmchuyendoidonvi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmchuyendoidonvi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|solutionrelative:frmchuyendoidonvi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmlichsu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|solutionrelative:frmlichsu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|solutionrelative:frmfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692423E9-38D3-45CF-8854-3236B2F3C1CB}|PhanMemMayTinhTrongDienThoai.csproj|d:\\cnpm\\phanmemmaytinhtrongdienthoai\\frmmaincalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLichSu.cs [Design]",
+              "DocumentMoniker": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmLichSu.cs",
+              "RelativeDocumentMoniker": "frmLichSu.cs",
+              "ToolTip": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmLichSu.cs [Design]",
+              "RelativeToolTip": "frmLichSu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T04:52:03.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmFunctions.cs [Design]",
+              "DocumentMoniker": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmFunctions.cs",
+              "RelativeDocumentMoniker": "frmFunctions.cs",
+              "ToolTip": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmFunctions.cs [Design]",
+              "RelativeToolTip": "frmFunctions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T04:39:50.916Z"
             },
             {
               "$type": "Document",
@@ -37,12 +67,11 @@
               "ToolTip": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmChuyenDoiDonVi.cs [Design]",
               "RelativeToolTip": "frmChuyenDoiDonVi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:11:09.438Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-21T17:11:09.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmMainCalculator.cs",
               "DocumentMoniker": "D:\\cnpm\\PhanMemMayTinhTrongDienThoai\\frmMainCalculator.cs",
               "RelativeDocumentMoniker": "frmMainCalculator.cs",
