@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
+            btnGiaiThua = new Button();
+            btnLapPhuong = new Button();
+            btnMuX = new Button();
+            btnAtanh = new Button();
+            btnAcosh = new Button();
+            btnAsinh = new Button();
+            btnTanh = new Button();
+            btnCosh = new Button();
+            btnSinh = new Button();
+            btnAtan = new Button();
+            btnAco = new Button();
+            btnAsin = new Button();
+            btnCanBac3 = new Button();
+            btnRad = new Button();
+            btnBack = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,21 +53,21 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.Controls.Add(button15, 2, 4);
-            tableLayoutPanel1.Controls.Add(button14, 1, 4);
-            tableLayoutPanel1.Controls.Add(button13, 0, 4);
-            tableLayoutPanel1.Controls.Add(button12, 2, 3);
-            tableLayoutPanel1.Controls.Add(button11, 1, 3);
-            tableLayoutPanel1.Controls.Add(button10, 0, 3);
-            tableLayoutPanel1.Controls.Add(button9, 2, 2);
-            tableLayoutPanel1.Controls.Add(button8, 1, 2);
-            tableLayoutPanel1.Controls.Add(button7, 0, 2);
-            tableLayoutPanel1.Controls.Add(button6, 2, 1);
-            tableLayoutPanel1.Controls.Add(button5, 1, 1);
-            tableLayoutPanel1.Controls.Add(button4, 0, 1);
-            tableLayoutPanel1.Controls.Add(button3, 2, 0);
-            tableLayoutPanel1.Controls.Add(button2, 1, 0);
-            tableLayoutPanel1.Controls.Add(button1, 0, 0);
+            tableLayoutPanel1.Controls.Add(btnGiaiThua, 2, 4);
+            tableLayoutPanel1.Controls.Add(btnLapPhuong, 1, 4);
+            tableLayoutPanel1.Controls.Add(btnMuX, 0, 4);
+            tableLayoutPanel1.Controls.Add(btnAtanh, 2, 3);
+            tableLayoutPanel1.Controls.Add(btnAcosh, 1, 3);
+            tableLayoutPanel1.Controls.Add(btnAsinh, 0, 3);
+            tableLayoutPanel1.Controls.Add(btnTanh, 2, 2);
+            tableLayoutPanel1.Controls.Add(btnCosh, 1, 2);
+            tableLayoutPanel1.Controls.Add(btnSinh, 0, 2);
+            tableLayoutPanel1.Controls.Add(btnAtan, 2, 1);
+            tableLayoutPanel1.Controls.Add(btnAco, 1, 1);
+            tableLayoutPanel1.Controls.Add(btnAsin, 0, 1);
+            tableLayoutPanel1.Controls.Add(btnCanBac3, 2, 0);
+            tableLayoutPanel1.Controls.Add(btnRad, 1, 0);
+            tableLayoutPanel1.Controls.Add(btnBack, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel1.ForeColor = Color.FromArgb(49, 27, 146);
@@ -79,173 +79,219 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(386, 382);
             tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // btnGiaiThua
             // 
-            button1.BackColor = Color.FromArgb(243, 229, 245);
-            button1.Dock = DockStyle.Fill;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 70);
-            button1.TabIndex = 0;
-            button1.Text = "↔";
-            button1.UseVisualStyleBackColor = false;
+            btnGiaiThua.BackColor = Color.FromArgb(243, 229, 245);
+            btnGiaiThua.Dock = DockStyle.Fill;
+            btnGiaiThua.FlatAppearance.BorderSize = 0;
+            btnGiaiThua.FlatStyle = FlatStyle.Flat;
+            btnGiaiThua.Location = new Point(261, 309);
+            btnGiaiThua.Margin = new Padding(5);
+            btnGiaiThua.Name = "btnGiaiThua";
+            btnGiaiThua.Size = new Size(120, 68);
+            btnGiaiThua.TabIndex = 14;
+            btnGiaiThua.Text = "x!";
+            btnGiaiThua.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnLapPhuong
             // 
-            button2.BackColor = Color.FromArgb(243, 229, 245);
-            button2.Dock = DockStyle.Fill;
-            button2.Location = new Point(131, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 70);
-            button2.TabIndex = 1;
-            button2.Text = "Rad";
-            button2.UseVisualStyleBackColor = false;
+            btnLapPhuong.BackColor = Color.FromArgb(243, 229, 245);
+            btnLapPhuong.Dock = DockStyle.Fill;
+            btnLapPhuong.FlatAppearance.BorderSize = 0;
+            btnLapPhuong.FlatStyle = FlatStyle.Flat;
+            btnLapPhuong.Location = new Point(133, 309);
+            btnLapPhuong.Margin = new Padding(5);
+            btnLapPhuong.Name = "btnLapPhuong";
+            btnLapPhuong.Size = new Size(118, 68);
+            btnLapPhuong.TabIndex = 13;
+            btnLapPhuong.Text = " x³";
+            btnLapPhuong.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnMuX
             // 
-            button3.BackColor = Color.FromArgb(243, 229, 245);
-            button3.Dock = DockStyle.Fill;
-            button3.Location = new Point(259, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(124, 70);
-            button3.TabIndex = 2;
-            button3.Text = "∛";
-            button3.UseVisualStyleBackColor = false;
+            btnMuX.BackColor = Color.FromArgb(243, 229, 245);
+            btnMuX.Dock = DockStyle.Fill;
+            btnMuX.FlatAppearance.BorderSize = 0;
+            btnMuX.FlatStyle = FlatStyle.Flat;
+            btnMuX.Location = new Point(5, 309);
+            btnMuX.Margin = new Padding(5);
+            btnMuX.Name = "btnMuX";
+            btnMuX.Size = new Size(118, 68);
+            btnMuX.TabIndex = 12;
+            btnMuX.Text = " 2ˣ";
+            btnMuX.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnAtanh
             // 
-            button4.BackColor = Color.FromArgb(243, 229, 245);
-            button4.Dock = DockStyle.Fill;
-            button4.Location = new Point(3, 79);
-            button4.Name = "button4";
-            button4.Size = new Size(122, 70);
-            button4.TabIndex = 3;
-            button4.Text = "sin⁻¹";
-            button4.UseVisualStyleBackColor = false;
+            btnAtanh.BackColor = Color.FromArgb(243, 229, 245);
+            btnAtanh.Dock = DockStyle.Fill;
+            btnAtanh.FlatAppearance.BorderSize = 0;
+            btnAtanh.FlatStyle = FlatStyle.Flat;
+            btnAtanh.Location = new Point(261, 233);
+            btnAtanh.Margin = new Padding(5);
+            btnAtanh.Name = "btnAtanh";
+            btnAtanh.Size = new Size(120, 66);
+            btnAtanh.TabIndex = 11;
+            btnAtanh.Text = "tanh⁻¹";
+            btnAtanh.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnAcosh
             // 
-            button5.BackColor = Color.FromArgb(243, 229, 245);
-            button5.Dock = DockStyle.Fill;
-            button5.Location = new Point(131, 79);
-            button5.Name = "button5";
-            button5.Size = new Size(122, 70);
-            button5.TabIndex = 4;
-            button5.Text = "cos⁻¹";
-            button5.UseVisualStyleBackColor = false;
+            btnAcosh.BackColor = Color.FromArgb(243, 229, 245);
+            btnAcosh.Dock = DockStyle.Fill;
+            btnAcosh.FlatAppearance.BorderSize = 0;
+            btnAcosh.FlatStyle = FlatStyle.Flat;
+            btnAcosh.Location = new Point(133, 233);
+            btnAcosh.Margin = new Padding(5);
+            btnAcosh.Name = "btnAcosh";
+            btnAcosh.Size = new Size(118, 66);
+            btnAcosh.TabIndex = 10;
+            btnAcosh.Text = " cosh⁻¹";
+            btnAcosh.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnAsinh
             // 
-            button6.BackColor = Color.FromArgb(243, 229, 245);
-            button6.Dock = DockStyle.Fill;
-            button6.Location = new Point(259, 79);
-            button6.Name = "button6";
-            button6.Size = new Size(124, 70);
-            button6.TabIndex = 5;
-            button6.Text = "tan⁻¹";
-            button6.UseVisualStyleBackColor = false;
+            btnAsinh.BackColor = Color.FromArgb(243, 229, 245);
+            btnAsinh.Dock = DockStyle.Fill;
+            btnAsinh.FlatAppearance.BorderSize = 0;
+            btnAsinh.FlatStyle = FlatStyle.Flat;
+            btnAsinh.Location = new Point(5, 233);
+            btnAsinh.Margin = new Padding(5);
+            btnAsinh.Name = "btnAsinh";
+            btnAsinh.Size = new Size(118, 66);
+            btnAsinh.TabIndex = 9;
+            btnAsinh.Text = "sinh⁻¹";
+            btnAsinh.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnTanh
             // 
-            button7.BackColor = Color.FromArgb(243, 229, 245);
-            button7.Dock = DockStyle.Fill;
-            button7.Location = new Point(3, 155);
-            button7.Name = "button7";
-            button7.Size = new Size(122, 70);
-            button7.TabIndex = 6;
-            button7.Text = "sinh";
-            button7.UseVisualStyleBackColor = false;
+            btnTanh.BackColor = Color.FromArgb(243, 229, 245);
+            btnTanh.Dock = DockStyle.Fill;
+            btnTanh.FlatAppearance.BorderSize = 0;
+            btnTanh.FlatStyle = FlatStyle.Flat;
+            btnTanh.Location = new Point(261, 157);
+            btnTanh.Margin = new Padding(5);
+            btnTanh.Name = "btnTanh";
+            btnTanh.Size = new Size(120, 66);
+            btnTanh.TabIndex = 8;
+            btnTanh.Text = "tanh";
+            btnTanh.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnCosh
             // 
-            button8.BackColor = Color.FromArgb(243, 229, 245);
-            button8.Dock = DockStyle.Fill;
-            button8.Location = new Point(131, 155);
-            button8.Name = "button8";
-            button8.Size = new Size(122, 70);
-            button8.TabIndex = 7;
-            button8.Text = " cosh";
-            button8.UseVisualStyleBackColor = false;
+            btnCosh.BackColor = Color.FromArgb(243, 229, 245);
+            btnCosh.Dock = DockStyle.Fill;
+            btnCosh.FlatAppearance.BorderSize = 0;
+            btnCosh.FlatStyle = FlatStyle.Flat;
+            btnCosh.Location = new Point(133, 157);
+            btnCosh.Margin = new Padding(5);
+            btnCosh.Name = "btnCosh";
+            btnCosh.Size = new Size(118, 66);
+            btnCosh.TabIndex = 7;
+            btnCosh.Text = " cosh";
+            btnCosh.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnSinh
             // 
-            button9.BackColor = Color.FromArgb(243, 229, 245);
-            button9.Dock = DockStyle.Fill;
-            button9.Location = new Point(259, 155);
-            button9.Name = "button9";
-            button9.Size = new Size(124, 70);
-            button9.TabIndex = 8;
-            button9.Text = "tanh";
-            button9.UseVisualStyleBackColor = false;
+            btnSinh.BackColor = Color.FromArgb(243, 229, 245);
+            btnSinh.Dock = DockStyle.Fill;
+            btnSinh.FlatAppearance.BorderSize = 0;
+            btnSinh.FlatStyle = FlatStyle.Flat;
+            btnSinh.Location = new Point(5, 157);
+            btnSinh.Margin = new Padding(5);
+            btnSinh.Name = "btnSinh";
+            btnSinh.Size = new Size(118, 66);
+            btnSinh.TabIndex = 6;
+            btnSinh.Text = "sinh";
+            btnSinh.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnAtan
             // 
-            button10.BackColor = Color.FromArgb(243, 229, 245);
-            button10.Dock = DockStyle.Fill;
-            button10.Location = new Point(3, 231);
-            button10.Name = "button10";
-            button10.Size = new Size(122, 70);
-            button10.TabIndex = 9;
-            button10.Text = "sinh⁻¹";
-            button10.UseVisualStyleBackColor = false;
+            btnAtan.BackColor = Color.FromArgb(243, 229, 245);
+            btnAtan.Dock = DockStyle.Fill;
+            btnAtan.FlatAppearance.BorderSize = 0;
+            btnAtan.FlatStyle = FlatStyle.Flat;
+            btnAtan.Location = new Point(261, 81);
+            btnAtan.Margin = new Padding(5);
+            btnAtan.Name = "btnAtan";
+            btnAtan.Size = new Size(120, 66);
+            btnAtan.TabIndex = 5;
+            btnAtan.Text = "tan⁻¹";
+            btnAtan.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnAco
             // 
-            button11.BackColor = Color.FromArgb(243, 229, 245);
-            button11.Dock = DockStyle.Fill;
-            button11.Location = new Point(131, 231);
-            button11.Name = "button11";
-            button11.Size = new Size(122, 70);
-            button11.TabIndex = 10;
-            button11.Text = " cosh⁻¹";
-            button11.UseVisualStyleBackColor = false;
+            btnAco.BackColor = Color.FromArgb(243, 229, 245);
+            btnAco.Dock = DockStyle.Fill;
+            btnAco.FlatAppearance.BorderSize = 0;
+            btnAco.FlatStyle = FlatStyle.Flat;
+            btnAco.Location = new Point(133, 81);
+            btnAco.Margin = new Padding(5);
+            btnAco.Name = "btnAco";
+            btnAco.Size = new Size(118, 66);
+            btnAco.TabIndex = 4;
+            btnAco.Text = "cos⁻¹";
+            btnAco.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnAsin
             // 
-            button12.BackColor = Color.FromArgb(243, 229, 245);
-            button12.Dock = DockStyle.Fill;
-            button12.Location = new Point(259, 231);
-            button12.Name = "button12";
-            button12.Size = new Size(124, 70);
-            button12.TabIndex = 11;
-            button12.Text = "tanh⁻¹";
-            button12.UseVisualStyleBackColor = false;
+            btnAsin.BackColor = Color.FromArgb(243, 229, 245);
+            btnAsin.Dock = DockStyle.Fill;
+            btnAsin.FlatAppearance.BorderSize = 0;
+            btnAsin.FlatStyle = FlatStyle.Flat;
+            btnAsin.Location = new Point(5, 81);
+            btnAsin.Margin = new Padding(5);
+            btnAsin.Name = "btnAsin";
+            btnAsin.Size = new Size(118, 66);
+            btnAsin.TabIndex = 3;
+            btnAsin.Text = "sin⁻¹";
+            btnAsin.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnCanBac3
             // 
-            button13.BackColor = Color.FromArgb(243, 229, 245);
-            button13.Dock = DockStyle.Fill;
-            button13.Location = new Point(3, 307);
-            button13.Name = "button13";
-            button13.Size = new Size(122, 72);
-            button13.TabIndex = 12;
-            button13.Text = "Text 2ˣ";
-            button13.UseVisualStyleBackColor = false;
+            btnCanBac3.BackColor = Color.FromArgb(243, 229, 245);
+            btnCanBac3.Dock = DockStyle.Fill;
+            btnCanBac3.FlatAppearance.BorderSize = 0;
+            btnCanBac3.FlatStyle = FlatStyle.Flat;
+            btnCanBac3.Location = new Point(261, 5);
+            btnCanBac3.Margin = new Padding(5);
+            btnCanBac3.Name = "btnCanBac3";
+            btnCanBac3.Size = new Size(120, 66);
+            btnCanBac3.TabIndex = 2;
+            btnCanBac3.Text = "∛";
+            btnCanBac3.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btnRad
             // 
-            button14.BackColor = Color.FromArgb(243, 229, 245);
-            button14.Dock = DockStyle.Fill;
-            button14.Location = new Point(131, 307);
-            button14.Name = "button14";
-            button14.Size = new Size(122, 72);
-            button14.TabIndex = 13;
-            button14.Text = "Text x³";
-            button14.UseVisualStyleBackColor = false;
+            btnRad.BackColor = Color.FromArgb(243, 229, 245);
+            btnRad.Dock = DockStyle.Fill;
+            btnRad.FlatAppearance.BorderSize = 0;
+            btnRad.FlatStyle = FlatStyle.Flat;
+            btnRad.Location = new Point(133, 5);
+            btnRad.Margin = new Padding(5);
+            btnRad.Name = "btnRad";
+            btnRad.Size = new Size(118, 66);
+            btnRad.TabIndex = 1;
+            btnRad.Text = "Rad";
+            btnRad.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // btnBack
             // 
-            button15.BackColor = Color.FromArgb(243, 229, 245);
-            button15.Dock = DockStyle.Fill;
-            button15.Location = new Point(259, 307);
-            button15.Name = "button15";
-            button15.Size = new Size(124, 72);
-            button15.TabIndex = 14;
-            button15.Text = "Text x!";
-            button15.UseVisualStyleBackColor = false;
+            btnBack.BackColor = Color.FromArgb(243, 229, 245);
+            btnBack.Dock = DockStyle.Fill;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Location = new Point(5, 5);
+            btnBack.Margin = new Padding(5);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(118, 66);
+            btnBack.TabIndex = 0;
+            btnBack.Text = "↔";
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // frmFunctions
             // 
@@ -255,7 +301,7 @@
             Controls.Add(tableLayoutPanel1);
             ForeColor = Color.FromArgb(240, 240, 255);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "frmFunctions";
             ShowIcon = false;
             ShowInTaskbar = false;
@@ -267,20 +313,20 @@
 
         #endregion
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button1;
-        private Button button15;
-        private Button button14;
-        private Button button13;
-        private Button button12;
-        private Button button11;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button btnBack;
+        private Button btnGiaiThua;
+        private Button btnLapPhuong;
+        private Button btnMuX;
+        private Button btnAtanh;
+        private Button btnAcosh;
+        private Button btnAsinh;
+        private Button btnTanh;
+        private Button btnCosh;
+        private Button btnSinh;
+        private Button btnAtan;
+        private Button btnAco;
+        private Button btnAsin;
+        private Button btnCanBac3;
+        private Button btnRad;
     }
 }
