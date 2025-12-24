@@ -36,11 +36,12 @@
             splitContainer3 = new SplitContainer();
             lblPreview = new Label();
             label1 = new Label();
-            tableLayoutPanel3 = new TableLayoutPanel();
+            splitContainer5 = new SplitContainer();
+            tableLayoutPanel1 = new TableLayoutPanel();
             btnHistory = new Button();
-            tableLayoutPanel4 = new TableLayoutPanel();
-            btnBackspace = new Button();
+            tableLayoutPanel3 = new TableLayoutPanel();
             btnRuler = new Button();
+            button1 = new Button();
             splitContainer4 = new SplitContainer();
             tlpFunctions = new TableLayoutPanel();
             btnTongleFunc = new Button();
@@ -92,8 +93,12 @@
             splitContainer3.Panel1.SuspendLayout();
             splitContainer3.Panel2.SuspendLayout();
             splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).BeginInit();
+            splitContainer5.Panel1.SuspendLayout();
+            splitContainer5.Panel2.SuspendLayout();
+            splitContainer5.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
-            tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer4).BeginInit();
             splitContainer4.Panel1.SuspendLayout();
             splitContainer4.Panel2.SuspendLayout();
@@ -197,8 +202,7 @@
             // 
             // splitContainer3.Panel2
             // 
-            splitContainer3.Panel2.Controls.Add(tableLayoutPanel3);
-            splitContainer3.Panel2.Controls.Add(tableLayoutPanel4);
+            splitContainer3.Panel2.Controls.Add(splitContainer5);
             splitContainer3.Size = new Size(1162, 224);
             splitContainer3.SplitterDistance = 112;
             splitContainer3.SplitterWidth = 3;
@@ -226,91 +230,97 @@
             label1.Size = new Size(1162, 112);
             label1.TabIndex = 0;
             // 
-            // tableLayoutPanel3
+            // splitContainer5
             // 
-            tableLayoutPanel3.BackColor = Color.White;
-            tableLayoutPanel3.ColumnCount = 3;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.8767128F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.0724068F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.05088F));
-            tableLayoutPanel3.Controls.Add(btnHistory, 0, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            tableLayoutPanel3.ForeColor = SystemColors.ControlText;
-            tableLayoutPanel3.Location = new Point(0, 0);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 1;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(483, 109);
-            tableLayoutPanel3.TabIndex = 0;
+            splitContainer5.Dock = DockStyle.Fill;
+            splitContainer5.Location = new Point(0, 0);
+            splitContainer5.Name = "splitContainer5";
+            // 
+            // splitContainer5.Panel1
+            // 
+            splitContainer5.Panel1.Controls.Add(tableLayoutPanel1);
+            // 
+            // splitContainer5.Panel2
+            // 
+            splitContainer5.Panel2.Controls.Add(tableLayoutPanel3);
+            splitContainer5.Size = new Size(1162, 109);
+            splitContainer5.SplitterDistance = 478;
+            splitContainer5.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 3;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.Controls.Add(btnHistory, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(478, 109);
+            tableLayoutPanel1.TabIndex = 0;
             // 
             // btnHistory
             // 
             btnHistory.Dock = DockStyle.Fill;
             btnHistory.FlatAppearance.BorderSize = 0;
             btnHistory.FlatStyle = FlatStyle.Flat;
-            btnHistory.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            btnHistory.ForeColor = Color.FromArgb(123, 31, 162);
-            btnHistory.Location = new Point(5, 5);
-            btnHistory.Margin = new Padding(5);
+            btnHistory.ForeColor = Color.FromArgb(49, 27, 146);
+            btnHistory.Location = new Point(3, 3);
             btnHistory.Name = "btnHistory";
-            btnHistory.Size = new Size(148, 99);
+            btnHistory.Size = new Size(153, 103);
             btnHistory.TabIndex = 0;
-            btnHistory.Text = "🕐";
+            btnHistory.Text = "🕒";
             btnHistory.UseVisualStyleBackColor = true;
             btnHistory.Click += btnHistory_Click;
             // 
-            // tableLayoutPanel4
+            // tableLayoutPanel3
             // 
-            tableLayoutPanel4.BackColor = Color.White;
-            tableLayoutPanel4.ColumnCount = 4;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel4.Controls.Add(btnBackspace, 3, 0);
-            tableLayoutPanel4.Controls.Add(btnRuler, 2, 0);
-            tableLayoutPanel4.Dock = DockStyle.Right;
-            tableLayoutPanel4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            tableLayoutPanel4.ForeColor = SystemColors.ControlText;
-            tableLayoutPanel4.Location = new Point(483, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 1;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 185F));
-            tableLayoutPanel4.Size = new Size(679, 109);
-            tableLayoutPanel4.TabIndex = 1;
-            // 
-            // btnBackspace
-            // 
-            btnBackspace.Dock = DockStyle.Fill;
-            btnBackspace.FlatAppearance.BorderSize = 0;
-            btnBackspace.FlatStyle = FlatStyle.Flat;
-            btnBackspace.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            btnBackspace.ForeColor = Color.FromArgb(123, 31, 162);
-            btnBackspace.Location = new Point(512, 5);
-            btnBackspace.Margin = new Padding(5);
-            btnBackspace.Name = "btnBackspace";
-            btnBackspace.Size = new Size(162, 99);
-            btnBackspace.TabIndex = 0;
-            btnBackspace.Text = "⌫ ";
-            btnBackspace.UseVisualStyleBackColor = true;
+            tableLayoutPanel3.ColumnCount = 4;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel3.Controls.Add(btnRuler, 2, 0);
+            tableLayoutPanel3.Controls.Add(button1, 3, 0);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(0, 0);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel3.Size = new Size(680, 109);
+            tableLayoutPanel3.TabIndex = 0;
             // 
             // btnRuler
             // 
             btnRuler.Dock = DockStyle.Fill;
             btnRuler.FlatAppearance.BorderSize = 0;
             btnRuler.FlatStyle = FlatStyle.Flat;
-            btnRuler.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            btnRuler.ForeColor = Color.FromArgb(123, 31, 162);
-            btnRuler.Location = new Point(343, 5);
-            btnRuler.Margin = new Padding(5);
+            btnRuler.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRuler.ForeColor = Color.FromArgb(49, 27, 146);
+            btnRuler.Location = new Point(343, 3);
             btnRuler.Name = "btnRuler";
-            btnRuler.Size = new Size(159, 99);
-            btnRuler.TabIndex = 1;
+            btnRuler.Size = new Size(164, 103);
+            btnRuler.TabIndex = 0;
             btnRuler.Text = "📏";
             btnRuler.UseVisualStyleBackColor = true;
             btnRuler.Click += btnRuler_Click;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Fill;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.FromArgb(49, 27, 146);
+            button1.Location = new Point(513, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(164, 103);
+            button1.TabIndex = 1;
+            button1.Text = "⌫ ";
+            button1.UseVisualStyleBackColor = true;
             // 
             // splitContainer4
             // 
@@ -975,7 +985,7 @@
             // 
             // frmMainCalculator
             // 
-            AutoScaleDimensions = new SizeF(17F, 40F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1162, 749);
@@ -1002,8 +1012,12 @@
             splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer3).EndInit();
             splitContainer3.ResumeLayout(false);
+            splitContainer5.Panel1.ResumeLayout(false);
+            splitContainer5.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).EndInit();
+            splitContainer5.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel4.ResumeLayout(false);
             splitContainer4.Panel1.ResumeLayout(false);
             splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer4).EndInit();
@@ -1019,10 +1033,8 @@
         private SplitContainer splitContainer2;
         private SplitContainer splitContainer3;
         private SplitContainer splitContainer4;
-        private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tlpFunctions;
         private TableLayoutPanel tableLayoutPanel2;
-        private TableLayoutPanel tableLayoutPanel4;
         private Button btnTongleFunc;
         private Button btnDegRad;
         private Button btnSqrt;
@@ -1058,13 +1070,16 @@
         private Button btn0;
         private Button btnDecimal;
         private Button btnEqual;
-        private Button btnHistory;
-        private Button btnBackspace;
-        private Button btnRuler;
         private RichTextBox rtbMainDisplay;
         private Label label1;
         private Label lblPreview;
         private Panel pnlHeader;
         private Button btnCloseSplit;
+        private SplitContainer splitContainer5;
+        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Button btnRuler;
+        private Button button1;
+        private Button btnHistory;
     }
 }
