@@ -41,7 +41,7 @@
             btnHistory = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             btnRuler = new Button();
-            button1 = new Button();
+            btnBackspace = new Button();
             splitContainer4 = new SplitContainer();
             tlpFunctions = new TableLayoutPanel();
             btnTongleFunc = new Button();
@@ -284,7 +284,7 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.Controls.Add(btnRuler, 2, 0);
-            tableLayoutPanel3.Controls.Add(button1, 3, 0);
+            tableLayoutPanel3.Controls.Add(btnBackspace, 3, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(0, 0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -309,18 +309,18 @@
             btnRuler.UseVisualStyleBackColor = true;
             btnRuler.Click += btnRuler_Click;
             // 
-            // button1
+            // btnBackspace
             // 
-            button1.Dock = DockStyle.Fill;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(49, 27, 146);
-            button1.Location = new Point(513, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(164, 103);
-            button1.TabIndex = 1;
-            button1.Text = "⌫ ";
-            button1.UseVisualStyleBackColor = true;
+            btnBackspace.Dock = DockStyle.Fill;
+            btnBackspace.FlatAppearance.BorderSize = 0;
+            btnBackspace.FlatStyle = FlatStyle.Flat;
+            btnBackspace.ForeColor = Color.FromArgb(49, 27, 146);
+            btnBackspace.Location = new Point(513, 3);
+            btnBackspace.Name = "btnBackspace";
+            btnBackspace.Size = new Size(164, 103);
+            btnBackspace.TabIndex = 1;
+            btnBackspace.Text = "⌫ ";
+            btnBackspace.UseVisualStyleBackColor = true;
             // 
             // splitContainer4
             // 
@@ -985,7 +985,7 @@
             // 
             // frmMainCalculator
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 40F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1162, 749);
@@ -1079,7 +1079,7 @@
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel3;
         private Button btnRuler;
-        private Button button1;
+        private Button btnBackspace;
         private Button btnHistory;
     }
 }
