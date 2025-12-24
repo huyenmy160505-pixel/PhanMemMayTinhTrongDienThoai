@@ -21,14 +21,17 @@ namespace PhanMemMayTinhTrongDienThoai
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            // Chỉ ẩn Form này đi thôi, KHÔNG đóng hẳn
-            this.Hide();
+            // 1. Đóng form chuyển đổi hiện tại
+            this.Close();
 
-            // Nếu có Form Cha (Form Máy Tính) thì hiện nó lên lại
+            // 2. Gọi hàm khôi phục bên Form Main
+            // Lưu ý: FormCha là biến bạn đã truyền từ Main sang (kiểu Form)
+            // Cần ép kiểu về (frmMainCalculator) mới gọi được hàm HienLaiGiaoDien
+
             if (FormCha != null)
             {
-                FormCha.Location = this.Location; // Form Cha hiện ra đúng chỗ này
-                FormCha.Show();
+                frmMainCalculator fMain = (frmMainCalculator)FormCha;
+                fMain.HienLaiGiaoDien();
             }
 
         }
