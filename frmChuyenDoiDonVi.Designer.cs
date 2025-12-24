@@ -102,6 +102,7 @@
             btnThoat.TabIndex = 2;
             btnThoat.Text = "<";
             btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
             // 
             // tabChuyenDoi
             // 
