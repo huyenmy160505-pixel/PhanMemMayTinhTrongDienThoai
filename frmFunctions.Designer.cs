@@ -49,6 +49,7 @@
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.BackColor = Color.White;
             tableLayoutPanel1.ColumnCount = 3;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
@@ -72,6 +73,7 @@
             tableLayoutPanel1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel1.ForeColor = Color.FromArgb(49, 27, 146);
             tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new Padding(4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -79,8 +81,8 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(386, 382);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
+            tableLayoutPanel1.Size = new Size(518, 478);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // btnGiaiThua
@@ -89,10 +91,11 @@
             btnGiaiThua.Dock = DockStyle.Fill;
             btnGiaiThua.FlatAppearance.BorderSize = 0;
             btnGiaiThua.FlatStyle = FlatStyle.Flat;
-            btnGiaiThua.Location = new Point(261, 309);
-            btnGiaiThua.Margin = new Padding(5);
+            btnGiaiThua.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnGiaiThua.Location = new Point(350, 386);
+            btnGiaiThua.Margin = new Padding(6);
             btnGiaiThua.Name = "btnGiaiThua";
-            btnGiaiThua.Size = new Size(120, 68);
+            btnGiaiThua.Size = new Size(162, 86);
             btnGiaiThua.TabIndex = 14;
             btnGiaiThua.Text = "x!";
             btnGiaiThua.UseVisualStyleBackColor = false;
@@ -103,10 +106,11 @@
             btnLapPhuong.Dock = DockStyle.Fill;
             btnLapPhuong.FlatAppearance.BorderSize = 0;
             btnLapPhuong.FlatStyle = FlatStyle.Flat;
-            btnLapPhuong.Location = new Point(133, 309);
-            btnLapPhuong.Margin = new Padding(5);
+            btnLapPhuong.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnLapPhuong.Location = new Point(178, 386);
+            btnLapPhuong.Margin = new Padding(6);
             btnLapPhuong.Name = "btnLapPhuong";
-            btnLapPhuong.Size = new Size(118, 68);
+            btnLapPhuong.Size = new Size(160, 86);
             btnLapPhuong.TabIndex = 13;
             btnLapPhuong.Text = " x³";
             btnLapPhuong.UseVisualStyleBackColor = false;
@@ -117,10 +121,11 @@
             btnMuX.Dock = DockStyle.Fill;
             btnMuX.FlatAppearance.BorderSize = 0;
             btnMuX.FlatStyle = FlatStyle.Flat;
-            btnMuX.Location = new Point(5, 309);
-            btnMuX.Margin = new Padding(5);
+            btnMuX.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnMuX.Location = new Point(6, 386);
+            btnMuX.Margin = new Padding(6);
             btnMuX.Name = "btnMuX";
-            btnMuX.Size = new Size(118, 68);
+            btnMuX.Size = new Size(160, 86);
             btnMuX.TabIndex = 12;
             btnMuX.Text = " 2ˣ";
             btnMuX.UseVisualStyleBackColor = false;
@@ -131,10 +136,11 @@
             btnAtanh.Dock = DockStyle.Fill;
             btnAtanh.FlatAppearance.BorderSize = 0;
             btnAtanh.FlatStyle = FlatStyle.Flat;
-            btnAtanh.Location = new Point(261, 233);
-            btnAtanh.Margin = new Padding(5);
+            btnAtanh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAtanh.Location = new Point(350, 291);
+            btnAtanh.Margin = new Padding(6);
             btnAtanh.Name = "btnAtanh";
-            btnAtanh.Size = new Size(120, 66);
+            btnAtanh.Size = new Size(162, 83);
             btnAtanh.TabIndex = 11;
             btnAtanh.Text = "tanh⁻¹";
             btnAtanh.UseVisualStyleBackColor = false;
@@ -145,10 +151,11 @@
             btnAcosh.Dock = DockStyle.Fill;
             btnAcosh.FlatAppearance.BorderSize = 0;
             btnAcosh.FlatStyle = FlatStyle.Flat;
-            btnAcosh.Location = new Point(133, 233);
-            btnAcosh.Margin = new Padding(5);
+            btnAcosh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAcosh.Location = new Point(178, 291);
+            btnAcosh.Margin = new Padding(6);
             btnAcosh.Name = "btnAcosh";
-            btnAcosh.Size = new Size(118, 66);
+            btnAcosh.Size = new Size(160, 83);
             btnAcosh.TabIndex = 10;
             btnAcosh.Text = " cosh⁻¹";
             btnAcosh.UseVisualStyleBackColor = false;
@@ -159,10 +166,11 @@
             btnAsinh.Dock = DockStyle.Fill;
             btnAsinh.FlatAppearance.BorderSize = 0;
             btnAsinh.FlatStyle = FlatStyle.Flat;
-            btnAsinh.Location = new Point(5, 233);
-            btnAsinh.Margin = new Padding(5);
+            btnAsinh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAsinh.Location = new Point(6, 291);
+            btnAsinh.Margin = new Padding(6);
             btnAsinh.Name = "btnAsinh";
-            btnAsinh.Size = new Size(118, 66);
+            btnAsinh.Size = new Size(160, 83);
             btnAsinh.TabIndex = 9;
             btnAsinh.Text = "sinh⁻¹";
             btnAsinh.UseVisualStyleBackColor = false;
@@ -173,10 +181,11 @@
             btnTanh.Dock = DockStyle.Fill;
             btnTanh.FlatAppearance.BorderSize = 0;
             btnTanh.FlatStyle = FlatStyle.Flat;
-            btnTanh.Location = new Point(261, 157);
-            btnTanh.Margin = new Padding(5);
+            btnTanh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnTanh.Location = new Point(350, 196);
+            btnTanh.Margin = new Padding(6);
             btnTanh.Name = "btnTanh";
-            btnTanh.Size = new Size(120, 66);
+            btnTanh.Size = new Size(162, 83);
             btnTanh.TabIndex = 8;
             btnTanh.Text = "tanh";
             btnTanh.UseVisualStyleBackColor = false;
@@ -187,10 +196,11 @@
             btnCosh.Dock = DockStyle.Fill;
             btnCosh.FlatAppearance.BorderSize = 0;
             btnCosh.FlatStyle = FlatStyle.Flat;
-            btnCosh.Location = new Point(133, 157);
-            btnCosh.Margin = new Padding(5);
+            btnCosh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnCosh.Location = new Point(178, 196);
+            btnCosh.Margin = new Padding(6);
             btnCosh.Name = "btnCosh";
-            btnCosh.Size = new Size(118, 66);
+            btnCosh.Size = new Size(160, 83);
             btnCosh.TabIndex = 7;
             btnCosh.Text = " cosh";
             btnCosh.UseVisualStyleBackColor = false;
@@ -201,10 +211,11 @@
             btnSinh.Dock = DockStyle.Fill;
             btnSinh.FlatAppearance.BorderSize = 0;
             btnSinh.FlatStyle = FlatStyle.Flat;
-            btnSinh.Location = new Point(5, 157);
-            btnSinh.Margin = new Padding(5);
+            btnSinh.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnSinh.Location = new Point(6, 196);
+            btnSinh.Margin = new Padding(6);
             btnSinh.Name = "btnSinh";
-            btnSinh.Size = new Size(118, 66);
+            btnSinh.Size = new Size(160, 83);
             btnSinh.TabIndex = 6;
             btnSinh.Text = "sinh";
             btnSinh.UseVisualStyleBackColor = false;
@@ -215,10 +226,11 @@
             btnAtan.Dock = DockStyle.Fill;
             btnAtan.FlatAppearance.BorderSize = 0;
             btnAtan.FlatStyle = FlatStyle.Flat;
-            btnAtan.Location = new Point(261, 81);
-            btnAtan.Margin = new Padding(5);
+            btnAtan.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAtan.Location = new Point(350, 101);
+            btnAtan.Margin = new Padding(6);
             btnAtan.Name = "btnAtan";
-            btnAtan.Size = new Size(120, 66);
+            btnAtan.Size = new Size(162, 83);
             btnAtan.TabIndex = 5;
             btnAtan.Text = "tan⁻¹";
             btnAtan.UseVisualStyleBackColor = false;
@@ -229,10 +241,11 @@
             btnAco.Dock = DockStyle.Fill;
             btnAco.FlatAppearance.BorderSize = 0;
             btnAco.FlatStyle = FlatStyle.Flat;
-            btnAco.Location = new Point(133, 81);
-            btnAco.Margin = new Padding(5);
+            btnAco.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAco.Location = new Point(178, 101);
+            btnAco.Margin = new Padding(6);
             btnAco.Name = "btnAco";
-            btnAco.Size = new Size(118, 66);
+            btnAco.Size = new Size(160, 83);
             btnAco.TabIndex = 4;
             btnAco.Text = "cos⁻¹";
             btnAco.UseVisualStyleBackColor = false;
@@ -243,10 +256,11 @@
             btnAsin.Dock = DockStyle.Fill;
             btnAsin.FlatAppearance.BorderSize = 0;
             btnAsin.FlatStyle = FlatStyle.Flat;
-            btnAsin.Location = new Point(5, 81);
-            btnAsin.Margin = new Padding(5);
+            btnAsin.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnAsin.Location = new Point(6, 101);
+            btnAsin.Margin = new Padding(6);
             btnAsin.Name = "btnAsin";
-            btnAsin.Size = new Size(118, 66);
+            btnAsin.Size = new Size(160, 83);
             btnAsin.TabIndex = 3;
             btnAsin.Text = "sin⁻¹";
             btnAsin.UseVisualStyleBackColor = false;
@@ -257,10 +271,11 @@
             btnCanBac3.Dock = DockStyle.Fill;
             btnCanBac3.FlatAppearance.BorderSize = 0;
             btnCanBac3.FlatStyle = FlatStyle.Flat;
-            btnCanBac3.Location = new Point(261, 5);
-            btnCanBac3.Margin = new Padding(5);
+            btnCanBac3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnCanBac3.Location = new Point(350, 6);
+            btnCanBac3.Margin = new Padding(6);
             btnCanBac3.Name = "btnCanBac3";
-            btnCanBac3.Size = new Size(120, 66);
+            btnCanBac3.Size = new Size(162, 83);
             btnCanBac3.TabIndex = 2;
             btnCanBac3.Text = "∛";
             btnCanBac3.UseVisualStyleBackColor = false;
@@ -271,10 +286,11 @@
             btnRad.Dock = DockStyle.Fill;
             btnRad.FlatAppearance.BorderSize = 0;
             btnRad.FlatStyle = FlatStyle.Flat;
-            btnRad.Location = new Point(133, 5);
-            btnRad.Margin = new Padding(5);
+            btnRad.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnRad.Location = new Point(178, 6);
+            btnRad.Margin = new Padding(6);
             btnRad.Name = "btnRad";
-            btnRad.Size = new Size(118, 66);
+            btnRad.Size = new Size(160, 83);
             btnRad.TabIndex = 1;
             btnRad.Text = "Rad";
             btnRad.UseVisualStyleBackColor = false;
@@ -285,19 +301,21 @@
             btnBack.Dock = DockStyle.Fill;
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(5, 5);
-            btnBack.Margin = new Padding(5);
+            btnBack.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            btnBack.Location = new Point(6, 6);
+            btnBack.Margin = new Padding(6);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(118, 66);
+            btnBack.Size = new Size(160, 83);
             btnBack.TabIndex = 0;
             btnBack.Text = "↔";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // frmFunctions
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(386, 382);
+            ClientSize = new Size(518, 478);
             Controls.Add(tableLayoutPanel1);
             ForeColor = Color.FromArgb(240, 240, 255);
             FormBorderStyle = FormBorderStyle.None;

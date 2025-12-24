@@ -12,9 +12,12 @@ namespace PhanMemMayTinhTrongDienThoai
 {
     public partial class frmLichSu : Form
     {
+        public Form? FormCha { get; set; }
+
         public frmLichSu()
         {
             InitializeComponent();
         }
+
     }
 }
