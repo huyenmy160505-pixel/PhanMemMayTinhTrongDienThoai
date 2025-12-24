@@ -34,6 +34,11 @@ namespace PhanMemMayTinhTrongDienThoai
         {
             InitializeComponent();
         }
+        private void btnCloseSplit_Click(object sender, EventArgs e)
+                {
+                    // Lệnh này sẽ tắt toàn bộ chương trình ngay lập tức
+                    Application.Exit();
+                }
 
         // ====== 1. NÚT MỞ FUNCTIONS (BÊN TRÁI - Toggle) ======
         private void btnTongleFunc_Click(object sender, EventArgs e)
@@ -138,10 +143,33 @@ namespace PhanMemMayTinhTrongDienThoai
             }
         }
 
-        private void btnCloseSplit_Click(object sender, EventArgs e)
+        // --- DÁN ĐOẠN NÀY VÀO CUỐI CLASS frmMainCalculator ---
+
+        public void HienLaiGiaoDien()
         {
-            // Lệnh này sẽ tắt toàn bộ chương trình ngay lập tức
-            Application.Exit();
+            this.Show(); // Hiện Form Main trước
+
+            // Kiểm tra: Nếu biến frmHistory vẫn còn (tức là lúc trước đang mở)
+            if (frmHistory != null && !frmHistory.IsDisposed)
+            {
+                // 1. Tính toán lại kích thước (đề phòng bị nhảy)
+                Rectangle manHinh = Screen.PrimaryScreen.WorkingArea;
+                int rongLichSu = 400; // Số này phải khớp với nút btnHistory_Click
+
+                // 2. Ép Form Main về chế độ chia đôi
+                this.WindowState = FormWindowState.Normal;
+                this.SetBounds(rongLichSu, 0, manHinh.Width - rongLichSu, manHinh.Height);
+
+                // 3. Hiện Form Lịch sử và đặt lại vị trí
+                frmHistory.Show(); // Bắt buộc gọi lại lệnh này
+                frmHistory.SetBounds(0, 0, rongLichSu, manHinh.Height);
+            }
+            else
+            {
+                // Nếu lúc trước không mở lịch sử -> Về Full màn hình
+                this.WindowState = FormWindowState.Maximized;
+            }
         }
+
     }
 }
