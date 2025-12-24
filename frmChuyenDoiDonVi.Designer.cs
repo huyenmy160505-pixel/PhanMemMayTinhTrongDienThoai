@@ -643,62 +643,42 @@
             tableLayoutPanel3.Controls.Add(flowLayoutPanel3, 0, 2);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(0, 0);
-<<<<<<< HEAD
             tableLayoutPanel3.Margin = new Padding(4, 5, 4, 5);
-=======
             tableLayoutPanel3.Margin = new Padding(1);
->>>>>>> main
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 3;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-<<<<<<< HEAD
             tableLayoutPanel3.Size = new Size(827, 935);
             tableLayoutPanel3.TabIndex = 1;
-=======
             tableLayoutPanel3.Size = new Size(578, 673);
             tableLayoutPanel3.TabIndex = 2;
->>>>>>> main
             // 
             // panel5
             // 
             panel5.Controls.Add(splitContainer9);
             panel5.Dock = DockStyle.Fill;
-<<<<<<< HEAD
             panel5.Location = new Point(4, 5);
             panel5.Margin = new Padding(4, 5, 4, 5);
             panel5.Name = "panel5";
             panel5.Size = new Size(819, 223);
-=======
             panel5.Location = new Point(1, 1);
             panel5.Margin = new Padding(1);
             panel5.Name = "panel5";
             panel5.Size = new Size(576, 166);
->>>>>>> main
             panel5.TabIndex = 0;
             // 
             // splitContainer9
             // 
-<<<<<<< HEAD
-            lblNhietDo_KyHieuNguon.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblNhietDo_KyHieuNguon.Location = new Point(754, 205);
-            lblNhietDo_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
-            lblNhietDo_KyHieuNguon.Name = "lblNhietDo_KyHieuNguon";
-            lblNhietDo_KyHieuNguon.Size = new Size(68, 23);
-            lblNhietDo_KyHieuNguon.TabIndex = 3;
-            lblNhietDo_KyHieuNguon.TextAlign = ContentAlignment.BottomRight;
-=======
             splitContainer9.Dock = DockStyle.Fill;
             splitContainer9.Location = new Point(0, 0);
             splitContainer9.Margin = new Padding(1);
             splitContainer9.Name = "splitContainer9";
             splitContainer9.Orientation = Orientation.Horizontal;
->>>>>>> main
             // 
             // splitContainer9.Panel1
             // 
-<<<<<<< HEAD
             txtNhietDo_SoNhap.BackColor = Color.White;
             txtNhietDo_SoNhap.BorderStyle = BorderStyle.None;
             txtNhietDo_SoNhap.Location = new Point(0, 222);
@@ -707,7 +687,6 @@
             txtNhietDo_SoNhap.Name = "txtNhietDo_SoNhap";
             txtNhietDo_SoNhap.Size = new Size(753, 62);
             txtNhietDo_SoNhap.TabIndex = 2;
-=======
             splitContainer9.Panel1.BackColor = Color.White;
             splitContainer9.Panel1.Controls.Add(cboNhietDo_Nguon);
             // 
@@ -719,7 +698,6 @@
             splitContainer9.SplitterDistance = 123;
             splitContainer9.SplitterWidth = 1;
             splitContainer9.TabIndex = 1;
->>>>>>> main
             // 
             // cboNhietDo_Nguon
             // 
@@ -730,31 +708,16 @@
             cboNhietDo_Nguon.ForeColor = Color.BlueViolet;
             cboNhietDo_Nguon.FormattingEnabled = true;
             cboNhietDo_Nguon.Location = new Point(0, 0);
-<<<<<<< HEAD
             cboNhietDo_Nguon.Margin = new Padding(4, 5, 4, 5);
             cboNhietDo_Nguon.Name = "cboNhietDo_Nguon";
             cboNhietDo_Nguon.Size = new Size(171, 40);
-=======
             cboNhietDo_Nguon.Margin = new Padding(1);
             cboNhietDo_Nguon.Name = "cboNhietDo_Nguon";
             cboNhietDo_Nguon.Size = new Size(134, 29);
->>>>>>> main
             cboNhietDo_Nguon.TabIndex = 1;
             // 
             // txtNhietDo_SoNhap
             // 
-<<<<<<< HEAD
-            panel6.BackColor = Color.White;
-            panel6.Controls.Add(lblNhietDo_KyHieuDich);
-            panel6.Controls.Add(txtNhietDo_Dich);
-            panel6.Controls.Add(cboNhietDo_Dich);
-            panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(4, 238);
-            panel6.Margin = new Padding(4, 5, 4, 5);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(819, 223);
-            panel6.TabIndex = 1;
-=======
             txtNhietDo_SoNhap.BackColor = Color.White;
             txtNhietDo_SoNhap.BorderStyle = BorderStyle.None;
             txtNhietDo_SoNhap.Dock = DockStyle.Fill;
@@ -766,19 +729,9 @@
             txtNhietDo_SoNhap.Size = new Size(530, 37);
             txtNhietDo_SoNhap.TabIndex = 1;
             txtNhietDo_SoNhap.TextAlign = HorizontalAlignment.Right;
->>>>>>> main
             // 
             // lbalNhietDo_KyHieuNguon
             // 
-<<<<<<< HEAD
-            lblNhietDo_KyHieuDich.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblNhietDo_KyHieuDich.Location = new Point(756, 200);
-            lblNhietDo_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
-            lblNhietDo_KyHieuDich.Name = "lblNhietDo_KyHieuDich";
-            lblNhietDo_KyHieuDich.Size = new Size(68, 23);
-            lblNhietDo_KyHieuDich.TabIndex = 2;
-            lblNhietDo_KyHieuDich.TextAlign = ContentAlignment.BottomRight;
-=======
             lbalNhietDo_KyHieuNguon.Dock = DockStyle.Right;
             lbalNhietDo_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             lbalNhietDo_KyHieuNguon.ForeColor = Color.BlueViolet;
@@ -789,19 +742,9 @@
             lbalNhietDo_KyHieuNguon.Size = new Size(46, 42);
             lbalNhietDo_KyHieuNguon.TabIndex = 0;
             lbalNhietDo_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
->>>>>>> main
             // 
             // splitContainer11
             // 
-<<<<<<< HEAD
-            txtNhietDo_Dich.BorderStyle = BorderStyle.None;
-            txtNhietDo_Dich.Location = new Point(0, 222);
-            txtNhietDo_Dich.Margin = new Padding(1, 2, 1, 2);
-            txtNhietDo_Dich.Multiline = true;
-            txtNhietDo_Dich.Name = "txtNhietDo_Dich";
-            txtNhietDo_Dich.Size = new Size(753, 62);
-            txtNhietDo_Dich.TabIndex = 1;
-=======
             splitContainer11.Dock = DockStyle.Fill;
             splitContainer11.Location = new Point(1, 169);
             splitContainer11.Margin = new Padding(1);
@@ -821,7 +764,6 @@
             splitContainer11.SplitterDistance = 123;
             splitContainer11.SplitterWidth = 1;
             splitContainer11.TabIndex = 1;
->>>>>>> main
             // 
             // cboNhietDo_Dich
             // 
@@ -832,12 +774,10 @@
             cboNhietDo_Dich.ForeColor = Color.BlueViolet;
             cboNhietDo_Dich.FormattingEnabled = true;
             cboNhietDo_Dich.Location = new Point(0, 0);
-<<<<<<< HEAD
             cboNhietDo_Dich.Margin = new Padding(4, 5, 4, 5);
             cboNhietDo_Dich.Name = "cboNhietDo_Dich";
             cboNhietDo_Dich.Size = new Size(171, 40);
             cboNhietDo_Dich.TabIndex = 0;
-=======
             cboNhietDo_Dich.Margin = new Padding(1);
             cboNhietDo_Dich.Name = "cboNhietDo_Dich";
             cboNhietDo_Dich.Size = new Size(134, 29);
@@ -883,7 +823,6 @@
             flowLayoutPanel3.Size = new Size(576, 335);
             flowLayoutPanel3.TabIndex = 2;
             flowLayoutPanel3.WrapContents = false;
->>>>>>> main
             // 
             // tabPage4
             // 
@@ -982,20 +921,6 @@
             cboTheTich_Nguon.TabIndex = 1;
             // 
             // txtTheTich_SoNhap
-            // 
-<<<<<<< HEAD
-            textBox3.BackColor = Color.White;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Dock = DockStyle.Fill;
-            textBox3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.ForeColor = Color.BlueViolet;
-            textBox3.Location = new Point(0, 0);
-            textBox3.Margin = new Padding(1, 2, 1, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(749, 55);
-            textBox3.TabIndex = 1;
-            textBox3.TextAlign = HorizontalAlignment.Right;
-=======
             txtTheTich_SoNhap.BackColor = Color.White;
             txtTheTich_SoNhap.BorderStyle = BorderStyle.None;
             txtTheTich_SoNhap.Dock = DockStyle.Fill;
@@ -1007,7 +932,6 @@
             txtTheTich_SoNhap.Size = new Size(523, 37);
             txtTheTich_SoNhap.TabIndex = 1;
             txtTheTich_SoNhap.TextAlign = HorizontalAlignment.Right;
->>>>>>> main
             // 
             // lblTheTich_KyHieuNguon
             // 
@@ -1061,7 +985,6 @@
             // 
             // txtTheTich_KetQua
             // 
-<<<<<<< HEAD
             txtTheTich_SoNhap.BackColor = Color.White;
             txtTheTich_SoNhap.BorderStyle = BorderStyle.None;
             txtTheTich_SoNhap.Dock = DockStyle.Fill;
@@ -1073,7 +996,6 @@
             txtTheTich_SoNhap.Size = new Size(749, 55);
             txtTheTich_SoNhap.TabIndex = 2;
             txtTheTich_SoNhap.TextAlign = HorizontalAlignment.Right;
-=======
             txtTheTich_KetQua.BackColor = Color.White;
             txtTheTich_KetQua.BorderStyle = BorderStyle.None;
             txtTheTich_KetQua.Dock = DockStyle.Fill;
@@ -1085,7 +1007,6 @@
             txtTheTich_KetQua.Size = new Size(523, 37);
             txtTheTich_KetQua.TabIndex = 2;
             txtTheTich_KetQua.TextAlign = HorizontalAlignment.Right;
->>>>>>> main
             // 
             // lblTheTich_KyHieuDich
             // 
