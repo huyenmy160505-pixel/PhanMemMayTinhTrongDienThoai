@@ -400,6 +400,7 @@
             cboDienTich_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDienTich_Nguon.ForeColor = Color.BlueViolet;
             cboDienTich_Nguon.FormattingEnabled = true;
+            cboDienTich_Nguon.Items.AddRange(new object[] { "Acre (ac)", "Are (a)", "Hectare (ha)", "Centimet vuông (cm²)", "Feet vuông (ft²)", "Inch vuông (in²)", "Mét vuông (m²)" });
             cboDienTich_Nguon.Location = new Point(0, 0);
             cboDienTich_Nguon.Margin = new Padding(1, 2, 1, 2);
             cboDienTich_Nguon.Name = "cboDienTich_Nguon";
@@ -462,6 +463,7 @@
             cboDienTich_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDienTich_Dich.ForeColor = Color.BlueViolet;
             cboDienTich_Dich.FormattingEnabled = true;
+            cboDienTich_Dich.Items.AddRange(new object[] { "Acre (ac)", "Are (a)", "Hectare (ha)", "Centimet vuông (cm²)", "Feet vuông (ft²)", "Inch vuông (in²)", "Mét vuông (m²)" });
             cboDienTich_Dich.Location = new Point(0, 0);
             cboDienTich_Dich.Margin = new Padding(1, 2, 1, 2);
             cboDienTich_Dich.Name = "cboDienTich_Dich";
@@ -612,6 +614,7 @@
             cboDoDai_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDoDai_Nguon.ForeColor = Color.BlueViolet;
             cboDoDai_Nguon.FormattingEnabled = true;
+            cboDoDai_Nguon.Items.AddRange(new object[] { "Milimet (mm)", "Centimet (cm)", "Mét (m)", "Kilomet (km)", "Inch (in)", "Feet (ft)", "Yard (yd)", "Dặm (mi)", "Hải lý (NM)", "Dặm (mil)" });
             cboDoDai_Nguon.Location = new Point(0, 0);
             cboDoDai_Nguon.Margin = new Padding(1, 2, 1, 2);
             cboDoDai_Nguon.Name = "cboDoDai_Nguon";
@@ -674,6 +677,7 @@
             cboDoDai_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDoDai_Dich.ForeColor = Color.BlueViolet;
             cboDoDai_Dich.FormattingEnabled = true;
+            cboDoDai_Dich.Items.AddRange(new object[] { "Centimet (cm)", "Mét (m)", "Kilomet (km)", "Inch (in)", "Feet (ft)", "Yard (yd)", "Dặm (mi)", "Hải lý (NM)", "Dặm (mil)" });
             cboDoDai_Dich.Location = new Point(0, 0);
             cboDoDai_Dich.Margin = new Padding(1, 2, 1, 2);
             cboDoDai_Dich.Name = "cboDoDai_Dich";
@@ -810,6 +814,7 @@
             cboNhietDo_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboNhietDo_Nguon.ForeColor = Color.BlueViolet;
             cboNhietDo_Nguon.FormattingEnabled = true;
+            cboNhietDo_Nguon.Items.AddRange(new object[] { "Độ C (°C)", "Độ F (°F) ", "Kelvin (K)" });
             cboNhietDo_Nguon.Location = new Point(0, 0);
             cboNhietDo_Nguon.Margin = new Padding(1);
             cboNhietDo_Nguon.Name = "cboNhietDo_Nguon";
@@ -874,6 +879,7 @@
             cboNhietDo_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboNhietDo_Dich.ForeColor = Color.BlueViolet;
             cboNhietDo_Dich.FormattingEnabled = true;
+            cboNhietDo_Dich.Items.AddRange(new object[] { "Độ C (°C)", "Độ F (°F) ", "Kelvin (K)" });
             cboNhietDo_Dich.Location = new Point(0, 0);
             cboNhietDo_Dich.Margin = new Padding(1);
             cboNhietDo_Dich.Name = "cboNhietDo_Dich";
@@ -1011,6 +1017,7 @@
             cboTheTich_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboTheTich_Nguon.ForeColor = Color.BlueViolet;
             cboTheTich_Nguon.FormattingEnabled = true;
+            cboTheTich_Nguon.Items.AddRange(new object[] { "Gallon Anh (gal)", "Gallon Mỹ (gal)", "Lít (L)", "Mililit (mL)", "Centimet khối (cc) (cm3)", "Mét khối (m3)", "Inch khối (in3)", "Feet khối (ft3)" });
             cboTheTich_Nguon.Location = new Point(0, 0);
             cboTheTich_Nguon.Margin = new Padding(1, 2, 1, 2);
             cboTheTich_Nguon.Name = "cboTheTich_Nguon";
@@ -1075,6 +1082,7 @@
             cboTheTich_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboTheTich_Dich.ForeColor = Color.BlueViolet;
             cboTheTich_Dich.FormattingEnabled = true;
+            cboTheTich_Dich.Items.AddRange(new object[] { "Gallon Anh (gal)", "Gallon Mỹ (gal)", "Lít (L)", "Mililit (mL)", "Centimet khối (cc) (cm3)", "Mét khối (m3)", "Inch khối (in3)", "Feet khối (ft3)" });
             cboTheTich_Dich.Location = new Point(0, 0);
             cboTheTich_Dich.Margin = new Padding(1, 2, 1, 2);
             cboTheTich_Dich.Name = "cboTheTich_Dich";
