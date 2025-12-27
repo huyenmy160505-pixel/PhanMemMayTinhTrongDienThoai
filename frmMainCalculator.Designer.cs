@@ -39,6 +39,7 @@
             splitContainer5 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
             btnHistory = new Button();
+            lblDagRab = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             btnRuler = new Button();
             btnBackspace = new Button();
@@ -151,11 +152,12 @@
             // pnlHeader
             // 
             pnlHeader.Controls.Add(btnCloseSplit);
-            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.ForeColor = Color.White;
             pnlHeader.Location = new Point(0, 0);
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Padding = new Padding(5, 5, 0, 5);
-            pnlHeader.Size = new Size(1162, 60);
+            pnlHeader.RightToLeft = RightToLeft.No;
+            pnlHeader.Size = new Size(60, 60);
             pnlHeader.TabIndex = 1;
             // 
             // btnCloseSplit
@@ -254,6 +256,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.Controls.Add(btnHistory, 0, 0);
+            tableLayoutPanel1.Controls.Add(lblDagRab, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -275,6 +278,20 @@
             btnHistory.Text = "🕒";
             btnHistory.UseVisualStyleBackColor = true;
             btnHistory.Click += btnHistory_Click;
+            // 
+            // lblDagRab
+            // 
+            lblDagRab.AutoSize = true;
+            lblDagRab.Dock = DockStyle.Fill;
+            lblDagRab.FlatStyle = FlatStyle.Flat;
+            lblDagRab.ForeColor = Color.FromArgb(49, 27, 146);
+            lblDagRab.Location = new Point(164, 5);
+            lblDagRab.Margin = new Padding(5);
+            lblDagRab.Name = "lblDagRab";
+            lblDagRab.Size = new Size(149, 99);
+            lblDagRab.TabIndex = 1;
+            lblDagRab.Text = "label2";
+            lblDagRab.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -999,6 +1016,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Máy Tính";
             WindowState = FormWindowState.Maximized;
+            LocationChanged += frmMainCalculator_LocationChanged;
+            SizeChanged += frmMainCalculator_SizeChanged;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -1017,6 +1036,7 @@
             ((System.ComponentModel.ISupportInitialize)splitContainer5).EndInit();
             splitContainer5.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             splitContainer4.Panel1.ResumeLayout(false);
             splitContainer4.Panel2.ResumeLayout(false);
@@ -1081,5 +1101,6 @@
         private Button btnRuler;
         private Button btnBackspace;
         private Button btnHistory;
+        private Label lblDagRab;
     }
 }
