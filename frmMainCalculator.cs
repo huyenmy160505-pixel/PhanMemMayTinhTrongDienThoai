@@ -13,6 +13,8 @@ namespace PhanMemMayTinhTrongDienThoai
     public partial class frmMainCalculator : Form
     {
         // ========= KHAI BÁO BIẾN TOÀN CỤC =========
+
+        // +++++++++++++++++++++++++++++++++ Khai báo những thao tác chuyển đổi from +++++++++++++++++++++++++++++++++++++++++++++++++
         // Khai báo biến lưu form lịch sử
         private frmLichSu frmHistory = null;
 
@@ -34,56 +36,73 @@ namespace PhanMemMayTinhTrongDienThoai
         {
             InitializeComponent();
         }
+
+
+        // +++++++++++++++++++++++++++++++++ Khai báo những thao tác chuyển đổi from +++++++++++++++++++++++++++++++++++++++++++++++++
+
+        // ====== 1. NÚT MỞ Thoát (X) ======
         private void btnCloseSplit_Click(object sender, EventArgs e)
-                {
-                    // Lệnh này sẽ tắt toàn bộ chương trình ngay lập tức
-                    Application.Exit();
-                }
-
-        // ====== 1. NÚT MỞ FUNCTIONS (BÊN TRÁI - Toggle) ======
-        private void btnTongleFunc_Click(object sender, EventArgs e)
         {
-            // 1. Khởi tạo form chức năng
-            frmFunctions f = new frmFunctions();
-
-            // 2. Cấu hình giao diện: Không viền, cho phép chỉnh vị trí tay
-            f.FormBorderStyle = FormBorderStyle.None;
-            f.StartPosition = FormStartPosition.Manual;
-            f.TopMost = true; // Để chắc chắn nó nổi lên trên cùng
-
-            // 3. COPY KÍCH THƯỚC: Bắt form mới to bằng đúng cái khung tlpFunctions
-            f.Size = tlpFunctions.Size;
-
-            // 4. COPY VỊ TRÍ: Tìm vị trí thật trên màn hình của tlpFunctions để đè lên
-            // Point.Empty nghĩa là lấy góc trên-trái (0,0) của tlpFunctions
-            f.Location = tlpFunctions.PointToScreen(Point.Empty);
-
-            // 5. Hiện hình
-            f.Show();
+            // Lệnh này sẽ tắt toàn bộ chương trình ngay lập tức
+            Application.Exit();
         }
 
+        // ====== 2. NÚT MỞ FUNCTIONS (BÊN TRÁI - Toggle) ======
+        private void btnTongleFunc_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu đã mở rồi thì đóng lại (cơ chế Toggle)
+            if (frmFunc != null && !frmFunc.IsDisposed)
+            {
+                frmFunc.Close();
+                frmFunc = null;
+                return;
+            }
 
-        // ==== 2. NÚT CHUYỂN ĐỔI ĐƠN VỊ (ẨN MAIN - HIỆN CONVERT) ====
+            // 1. Gán vào biến TOÀN CỤC (frmFunc) thay vì tạo biến f cục bộ
+            frmFunc = new frmFunctions();
+
+            // 2. Cấu hình giao diện
+            frmFunc.FormBorderStyle = FormBorderStyle.None;
+            frmFunc.StartPosition = FormStartPosition.Manual;
+            frmFunc.TopMost = true;
+            frmFunc.ShowInTaskbar = false; // Ẩn khỏi thanh taskbar cho gọn
+
+            // 3. COPY KÍCH THƯỚC & VỊ TRÍ (Dùng hàm cập nhật chung để đảm bảo chuẩn)
+            CapNhatViTriFormCon();
+
+            // 4. Hiện hình
+            frmFunc.Show();
+        }
+
+        // ==== 3. NÚT CHUYỂN ĐỔI ĐƠN VỊ (ẨN MAIN - HIỆN CONVERT) ====
         private void btnRuler_Click(object sender, EventArgs e)
         {
+            // 1. Khởi tạo Form Convert nếu chưa có
             if (frmConvert == null || frmConvert.IsDisposed)
             {
                 frmConvert = new frmChuyenDoiDonVi();
                 frmConvert.FormCha = this; // Truyền Main sang để lát quay về
             }
 
-            // Đồng bộ vị trí
+            // 2. Đồng bộ vị trí (Để Convert hiện ra đúng chỗ Main đang đứng)
             frmConvert.StartPosition = FormStartPosition.Manual;
             frmConvert.Location = this.Location;
 
-            this.Hide();        // Ẩn Main đi
-            frmConvert.Show();  // Hiện Convert lên
+            // --- PHẦN THÊM MỚI: Ẩn Form Chức năng (frmFunc) ---
+            // Nếu frmFunc đang mở thì ẩn nó đi luôn cho gọn
+            if (frmFunc != null && !frmFunc.IsDisposed)
+            {
+                frmFunc.Hide();
+            }
+            // -------------------------------------------------
+
+            // 3. Ẩn Main và Hiện Convert
+            this.Hide();
+            frmConvert.Show();
         }
 
-
-        // ========= 3. NÚT LỊCH SỬ (BÊN PHẢI - Toggle) =========
-        // (Đã sửa lỗi đoạn này cho bạn)
-        // SỰ KIỆN BẤM NÚT ĐỒNG HỒ (LỊCH SỬ)
+        // ========= 4. NÚT LỊCH SỬ (BÊN PHẢI - Toggle) =========
+        // --- SỰ KIỆN BẤM NÚT ĐỒNG HỒ (LỊCH SỬ) ---
         private void btnHistory_Click(object sender, EventArgs e)
         {
             // --- TRƯỜNG HỢP 1: ĐANG MỞ THÌ TẮT ---
@@ -91,85 +110,110 @@ namespace PhanMemMayTinhTrongDienThoai
             {
                 frmHistory.Close();
                 frmHistory = null;
-
-                // Trả Form Main về trạng thái Full màn hình cũ
+                // Khi tắt thì trả về Full màn hình (Maximized) cho đẹp
                 this.WindowState = FormWindowState.Maximized;
             }
-            // --- TRƯỜNG HỢP 2: ĐANG TẮT THÌ MỞ (BÊN TRÁI) ---
+            // --- TRƯỜNG HỢP 2: ĐANG TẮT THÌ MỞ ---
             else
             {
-                // A. XỬ LÝ FORM MAIN (CHỦ NHÀ)
-                // Phải đưa về Normal mới chỉnh kích thước được (Maximized bị khóa cứng)
+                // A. THIẾT LẬP CHẾ ĐỘ CHIA ĐÔI MÀN HÌNH
                 this.WindowState = FormWindowState.Normal;
 
-                // Lấy kích thước màn hình hiện tại
+                // Lấy kích thước màn hình
                 Rectangle manHinh = Screen.PrimaryScreen.WorkingArea;
 
-                // Đặt Form Main dịch sang phải (để chừa chỗ bên trái)
+                // 1. Đặt Form Main sang bên PHẢI (Chừa chỗ 400px bên trái)
                 this.Top = 0;
-                this.Left = historyWidth; // Cách lề trái một đoạn
+                this.Left = historyWidth; // Cách lề trái 400px
                 this.Height = manHinh.Height;
                 this.Width = manHinh.Width - historyWidth; // Chiều rộng còn lại
 
-                // B. XỬ LÝ FORM LỊCH SỬ (KHÁCH)
+                // B. TẠO VÀ HIỆN FORM LỊCH SỬ
                 frmHistory = new frmLichSu();
-
-                // Code tự chỉnh giao diện (khỏi cần chỉnh tay Property)
-                frmHistory.FormBorderStyle = FormBorderStyle.None; // Bỏ viền
-                frmHistory.ShowInTaskbar = false;
-                frmHistory.Owner = this;
                 frmHistory.StartPosition = FormStartPosition.Manual;
-
-                // Đặt Form Lịch sử vào góc trên cùng bên TRÁI (0,0)
-                frmHistory.Location = new Point(0, 0);
-
-                // Kích thước lấp đầy phần bên trái
-                frmHistory.Width = historyWidth;
-                frmHistory.Height = manHinh.Height;
+                frmHistory.Width = historyWidth; // 400px
 
                 frmHistory.Show();
+
+                // C. CẬP NHẬT VỊ TRÍ (Để nó dính vào bên trái ngay lập tức)
+                CapNhatViTriFormCon();
             }
         }
 
-        // 3. SỰ KIỆN DI CHUYỂN (Chống lỗi khi user lỡ tay kéo Form Main lung tung)
+        // HÀM DÙNG CHUNG: Cập nhật vị trí (Bắt các Form con chạy về đúng chỗ)
+        private void CapNhatViTriFormCon()
+        {
+            // 1. Xử lý Form Lịch Sử (BÁM SÁT BÊN TRÁI)
+            if (frmHistory != null && !frmHistory.IsDisposed)
+            {
+                frmHistory.Height = this.Height;
+                // Logic mới: Lịch sử nằm bên trái của Form Main
+                frmHistory.Location = new Point(this.Left - frmHistory.Width, this.Top);
+                frmHistory.BringToFront();
+            }
+
+            // 2. Xử lý Form Chức Năng (Giữ nguyên bám vào tlpFunctions)
+            if (frmFunc != null && !frmFunc.IsDisposed)
+            {
+                if (!this.Visible)
+                {
+                    frmFunc.Hide();
+                    return;
+                }
+                frmFunc.Visible = true;
+                frmFunc.Size = tlpFunctions.Size;
+                frmFunc.Location = tlpFunctions.PointToScreen(Point.Empty);
+                frmFunc.BringToFront();
+            }
+        }
+
+        // Sự kiện DI CHUYỂN: Chỉ cần gọi hàm chung, không viết dài dòng
         private void frmMainCalculator_LocationChanged(object sender, EventArgs e)
         {
-            // Nếu Lịch sử đang mở, bắt buộc nó phải dính vào mép trái của Main
-            if (frmHistory != null && !frmHistory.IsDisposed)
-            {
-                // Nếu Form Main bị kéo đi, Form Lịch sử chạy theo (nằm bên trái)
-                frmHistory.Location = new Point(this.Location.X - frmHistory.Width, this.Location.Y);
-                frmHistory.Height = this.Height;
-            }
+            CapNhatViTriFormCon();
         }
 
-        // --- DÁN ĐOẠN NÀY VÀO CUỐI CLASS frmMainCalculator ---
+        // Sự kiện ĐỔI KÍCH THƯỚC: Chỉ cần gọi hàm chung
+        private void frmMainCalculator_SizeChanged(object sender, EventArgs e)
+        {
+            CapNhatViTriFormCon();
+        }
 
+        // --- KHAI BÁO CÁC MẶC ĐỊNH KHUÔN KHỔ THOÁT RA VÀO CỦA GIAO DIỆN  ---
         public void HienLaiGiaoDien()
         {
-            this.Show(); // Hiện Form Main trước
+            // 1. Hiện lại Form Main
+            this.Show();
 
-            // Kiểm tra: Nếu biến frmHistory vẫn còn (tức là lúc trước đang mở)
+            // 2. Hiện lại Form Chức năng
+            if (frmFunc != null && !frmFunc.IsDisposed)
+            {
+                frmFunc.Show();
+                frmFunc.BringToFront();
+            }
+
+            // 3. Hiện lại Form Lịch sử
             if (frmHistory != null && !frmHistory.IsDisposed)
             {
-                // 1. Tính toán lại kích thước (đề phòng bị nhảy)
+                frmHistory.Show();
+
+                // Nếu đang mở lịch sử -> Ép lại chế độ Full màn hình chia đôi
                 Rectangle manHinh = Screen.PrimaryScreen.WorkingArea;
-                int rongLichSu = 400; // Số này phải khớp với nút btnHistory_Click
-
-                // 2. Ép Form Main về chế độ chia đôi
                 this.WindowState = FormWindowState.Normal;
-                this.SetBounds(rongLichSu, 0, manHinh.Width - rongLichSu, manHinh.Height);
-
-                // 3. Hiện Form Lịch sử và đặt lại vị trí
-                frmHistory.Show(); // Bắt buộc gọi lại lệnh này
-                frmHistory.SetBounds(0, 0, rongLichSu, manHinh.Height);
+                this.SetBounds(historyWidth, 0, manHinh.Width - historyWidth, manHinh.Height);
             }
             else
             {
-                // Nếu lúc trước không mở lịch sử -> Về Full màn hình
+                // Nếu không có lịch sử -> Full màn hình thường
                 this.WindowState = FormWindowState.Maximized;
             }
+
+            // 4. Cập nhật dính vị trí
+            CapNhatViTriFormCon();
         }
+
+
+
 
     }
 }
