@@ -1204,7 +1204,7 @@
             cboKhoiLuong_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboKhoiLuong_Nguon.ForeColor = Color.BlueViolet;
             cboKhoiLuong_Nguon.FormattingEnabled = true;
-            cboKhoiLuong_Nguon.Items.AddRange(new object[] { "Tấn: [t]", "Tấn Anh: [t]", "Tấn Mỹ:[t]", "Pound: [lb]", "Ounce: [oz]", "Kilogram: [kg]", "Gram: [g]" });
+            cboKhoiLuong_Nguon.Items.AddRange(new object[] { "Tấn (t)", "Tấn Anh (t)", "Tấn Mỹ (t)", "Pound (lb)", "Ounce (oz)", "Kilogram (kg)", "Gram (g)" });
             cboKhoiLuong_Nguon.Location = new Point(0, 0);
             cboKhoiLuong_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboKhoiLuong_Nguon.Name = "cboKhoiLuong_Nguon";
@@ -1267,7 +1267,7 @@
             cboKhoiLuong_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboKhoiLuong_Dich.ForeColor = Color.BlueViolet;
             cboKhoiLuong_Dich.FormattingEnabled = true;
-            cboKhoiLuong_Dich.Items.AddRange(new object[] { "Tấn: [t]", "Tấn Anh: [t]", "Tấn Mỹ:[t]", "Pound: [lb]", "Ounce: [oz]", "Kilogram: [kg]", "Gram: [g]" });
+            cboKhoiLuong_Dich.Items.AddRange(new object[] { "Tấn (t)", "Tấn Anh (t)", "Tấn Mỹ (t)", "Pound (lb)", "Ounce (oz)", "Kilogram (kg)", "Gram (g)" });
             cboKhoiLuong_Dich.Location = new Point(0, 0);
             cboKhoiLuong_Dich.Margin = new Padding(1, 3, 1, 3);
             cboKhoiLuong_Dich.Name = "cboKhoiLuong_Dich";
@@ -1398,7 +1398,7 @@
             cboDuLieu_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDuLieu_Nguon.ForeColor = Color.BlueViolet;
             cboDuLieu_Nguon.FormattingEnabled = true;
-            cboDuLieu_Nguon.Items.AddRange(new object[] { "Bit: [bit]", "Byte: [B]", "Kilobyte: [KB]", "Kibibyte: [KiB]", "Megabyte: [MB]", "Mebibyte: [MiB]", "Gigabyte: [GB]", "Gibibyte: [GiB]", "Terabyte: [TB]", "Tebibyte: [TiB]" });
+            cboDuLieu_Nguon.Items.AddRange(new object[] { "Bit (bit)", "Byte (B)", "Kilobyte (KB)", "Kibibyte (KiB)", "Megabyte (MB)", "Mebibyte (MiB)", "Gigabyte (GB)", "Gibibyte (GiB)", "Terabyte (TB)", "Tebibyte (TiB)" });
             cboDuLieu_Nguon.Location = new Point(0, 0);
             cboDuLieu_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboDuLieu_Nguon.Name = "cboDuLieu_Nguon";
@@ -1461,7 +1461,7 @@
             cboDuLieu_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboDuLieu_Dich.ForeColor = Color.BlueViolet;
             cboDuLieu_Dich.FormattingEnabled = true;
-            cboDuLieu_Dich.Items.AddRange(new object[] { "Bit: [bit]", "Byte: [B]", "Kilobyte: [KB]", "Kibibyte: [KiB]", "Megabyte: [MB]", "Mebibyte: [MiB]", "Gigabyte: [GB]", "Gibibyte: [GiB]", "Terabyte: [TB]", "Tebibyte: [TiB]" });
+            cboDuLieu_Dich.Items.AddRange(new object[] { "Bit (bit)", "Byte (B)", "Kilobyte (KB)", "Kibibyte (KiB)", "Megabyte (MB)", "Mebibyte (MiB)", "Gigabyte (GB)", "Gibibyte (GiB)", "Terabyte (TB)", "Tebibyte (TiB)" });
             cboDuLieu_Dich.Location = new Point(0, 0);
             cboDuLieu_Dich.Margin = new Padding(1, 3, 1, 3);
             cboDuLieu_Dich.Name = "cboDuLieu_Dich";
@@ -1592,7 +1592,7 @@
             cboTocDo_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboTocDo_Nguon.ForeColor = Color.BlueViolet;
             cboTocDo_Nguon.FormattingEnabled = true;
-            cboTocDo_Nguon.Items.AddRange(new object[] { "Mét trên giây: [m/s]", "Mét trên giờ: [m/h]", "Kilomet trên giây: [km/s]", "Kilomet trên giờ: [km/h]", "Inch trên giây: [in/s]", "Inch trên giờ: [in/h]", "Feet trên giây: [ft/s]", "Feet trên giờ: [ft/h]", "Dặm trên giây: [mi/s]", "Dặm trên giờ: [mi/h]", "Hải lý trên giờ: [kn]" });
+            cboTocDo_Nguon.Items.AddRange(new object[] { "Mét trên giây (m/s)", "Mét trên giờ (m/h)", "Kilomet trên giây (km/s)", "Kilomet trên giờ (km/h)", "Inch trên giây (in/s)", "Inch trên giờ (in/h)", "Feet trên giây (ft/s)", "Feet trên giờ (ft/h)", "Dặm trên giây (mi/s)", "Dặm trên giờ (mi/h)", "Hải lý trên giờ (kn)" });
             cboTocDo_Nguon.Location = new Point(0, 0);
             cboTocDo_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboTocDo_Nguon.Name = "cboTocDo_Nguon";
@@ -1655,7 +1655,7 @@
             cboTocDo_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboTocDo_Dich.ForeColor = Color.BlueViolet;
             cboTocDo_Dich.FormattingEnabled = true;
-            cboTocDo_Dich.Items.AddRange(new object[] { "Mét trên giây: [m/s]", "Mét trên giờ: [m/h]", "Kilomet trên giây: [km/s]", "Kilomet trên giờ: [km/h]", "Inch trên giây: [in/s]", "Inch trên giờ: [in/h]", "Feet trên giây: [ft/s]", "Feet trên giờ: [ft/h]", "Dặm trên giây: [mi/s]", "Dặm trên giờ: [mi/h]", "Hải lý trên giờ: [kn]" });
+            cboTocDo_Dich.Items.AddRange(new object[] { "Mét trên giây (m/s)", "Mét trên giờ (m/h)", "Kilomet trên giây (km/s)", "Kilomet trên giờ (km/h)", "Inch trên giây (in/s)", "Inch trên giờ (in/h)", "Feet trên giây (ft/s)", "Feet trên giờ (ft/h)", "Dặm trên giây (mi/s)", "Dặm trên giờ (mi/h)", "Hải lý trên giờ (kn)" });
             cboTocDo_Dich.Location = new Point(0, 0);
             cboTocDo_Dich.Margin = new Padding(1, 3, 1, 3);
             cboTocDo_Dich.Name = "cboTocDo_Dich";
@@ -1786,7 +1786,7 @@
             cboThoiGian_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboThoiGian_Nguon.ForeColor = Color.BlueViolet;
             cboThoiGian_Nguon.FormattingEnabled = true;
-            cboThoiGian_Nguon.Items.AddRange(new object[] { "Mili giây: [ms]", "Giây: [s]", "Phút: [min]", "Giờ: [h]", "Ngày: [d]", "Tuần: [wk]" });
+            cboThoiGian_Nguon.Items.AddRange(new object[] { "Mili giây (ms)", "Giây (s)", "Phút (min)", "Giờ (h)", "Ngày (d)", "Tuần (wk)" });
             cboThoiGian_Nguon.Location = new Point(0, 0);
             cboThoiGian_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboThoiGian_Nguon.Name = "cboThoiGian_Nguon";
@@ -1849,7 +1849,7 @@
             cboThoiGian_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cboThoiGian_Dich.ForeColor = Color.BlueViolet;
             cboThoiGian_Dich.FormattingEnabled = true;
-            cboThoiGian_Dich.Items.AddRange(new object[] { "Mili giây: [ms]", "Giây: [s]", "Phút: [min]", "Giờ: [h]", "Ngày: [d]", "Tuần: [wk]" });
+            cboThoiGian_Dich.Items.AddRange(new object[] { "Mili giây (ms)", "Giây (s)", "Phút (min)", "Giờ (h)", "Ngày (d)", "Tuần (wk)" });
             cboThoiGian_Dich.Location = new Point(0, 0);
             cboThoiGian_Dich.Margin = new Padding(1, 3, 1, 3);
             cboThoiGian_Dich.Name = "cboThoiGian_Dich";
