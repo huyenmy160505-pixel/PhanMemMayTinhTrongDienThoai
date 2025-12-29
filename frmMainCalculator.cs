@@ -684,13 +684,13 @@ namespace PhanMemMayTinhTrongDienThoai
                 // 2. LƯU LỊCH SỬ (Biểu thức | Kết quả)
                 LuuLichSu(bieuThuc, ketQuaChu);
                 // CẬP NHẬT FORM LỊCH SỬ NGAY LẬP TỨC ---
-                //if (frmHistory != null && !frmHistory.IsDisposed)
-                //{
-                //    // Gọi hàm TaiLichSu() bạn vừa đổi thành public ở Bước 1
-                //    frmHistory.TaiLichSu();
+                if (frmHistory != null && !frmHistory.IsDisposed)
+                {
+                    // Gọi hàm TaiLichSu() bạn vừa đổi thành public ở Bước 1
+                    frmHistory.TaiLichSu();
 
-                //    // Cuộn xuống dòng mới nhất (nếu cần, nhưng code TaiLichSu đã đưa cái mới lên đầu rồi) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                //}
+                    // Cuộn xuống dòng mới nhất (nếu cần, nhưng code TaiLichSu đã đưa cái mới lên đầu rồi
+                }
 
                 // 3. ĐƯA KẾT QUẢ LÊN MÀN HÌNH CHÍNH (Thay thế biểu thức)
                 rtbMainDisplay.Text = ketQuaChu;
@@ -725,27 +725,27 @@ namespace PhanMemMayTinhTrongDienThoai
 
 
         ////----------------------------------- frmFunctions --------------------+++++++++++++++++++++++++++++++++++++++++++++++
-        //// --- HÀM CHO FORM KHÁC GỌI ĐỂ ĐỔI RAD/DEG ---
-        //public void DoiCheDoRadDeg()
-        //{
-        //    // Gọi lại sự kiện click của nút RadDeg trên Form chính
-        //    btnDegRad.PerformClick();
-        //}
+        // --- HÀM CHO FORM KHÁC GỌI ĐỂ ĐỔI RAD/DEG ---
+        public void DoiCheDoRadDeg()
+        {
+            // Gọi lại sự kiện click của nút RadDeg trên Form chính
+            btnDegRad.PerformClick();
+        }
 
-        ////-----------------------------------frmLichSu -------------------+++++++++++++++++++++++++++++++++++++++++++++++++++++
-        //// --- HÀM CHO FORM LỊCH SỬ GỌI ĐỂ XÓA MÀN HÌNH ---
-        //public void XoaManHinh()
-        //{
-        //    // Xóa sạch nội dung đang hiển thị
-        //    rtbMainDisplay.Text = "";
-        //    lblPreview.Text = "";
+        //-----------------------------------frmLichSu -------------------+++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // --- HÀM CHO FORM LỊCH SỬ GỌI ĐỂ XÓA MÀN HÌNH ---
+        public void XoaManHinh()
+        {
+            // Xóa sạch nội dung đang hiển thị
+            rtbMainDisplay.Text = "";
+            lblPreview.Text = "";
 
-        //    // Reset trạng thái
-        //    vuaBamBang = false;
+            // Reset trạng thái
+            vuaBamBang = false;
 
-        //    // Đưa con trỏ về lại màn hình nhập để sẵn sàng nhập số từ lịch sử
-        //    rtbMainDisplay.Focus();
-        //}
+            // Đưa con trỏ về lại màn hình nhập để sẵn sàng nhập số từ lịch sử
+            rtbMainDisplay.Focus();
+        }
 
     }
 }
