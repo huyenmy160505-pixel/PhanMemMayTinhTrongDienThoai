@@ -39,7 +39,7 @@
             splitContainer5 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
             btnHistory = new Button();
-            lblDagRab = new Label();
+            lblDegRad = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             btnRuler = new Button();
             btnBackspace = new Button();
@@ -188,6 +188,7 @@
             rtbMainDisplay.Size = new Size(1162, 111);
             rtbMainDisplay.TabIndex = 0;
             rtbMainDisplay.Text = "";
+            rtbMainDisplay.TextChanged += rtbMainDisplay_TextChanged;
             // 
             // splitContainer3
             // 
@@ -256,7 +257,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.Controls.Add(btnHistory, 0, 0);
-            tableLayoutPanel1.Controls.Add(lblDagRab, 1, 0);
+            tableLayoutPanel1.Controls.Add(lblDegRad, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -279,19 +280,18 @@
             btnHistory.UseVisualStyleBackColor = true;
             btnHistory.Click += btnHistory_Click;
             // 
-            // lblDagRab
+            // lblDegRad
             // 
-            lblDagRab.AutoSize = true;
-            lblDagRab.Dock = DockStyle.Fill;
-            lblDagRab.FlatStyle = FlatStyle.Flat;
-            lblDagRab.ForeColor = Color.FromArgb(49, 27, 146);
-            lblDagRab.Location = new Point(164, 5);
-            lblDagRab.Margin = new Padding(5);
-            lblDagRab.Name = "lblDagRab";
-            lblDagRab.Size = new Size(149, 99);
-            lblDagRab.TabIndex = 1;
-            lblDagRab.Text = "label2";
-            lblDagRab.TextAlign = ContentAlignment.MiddleCenter;
+            lblDegRad.AutoSize = true;
+            lblDegRad.Dock = DockStyle.Fill;
+            lblDegRad.FlatStyle = FlatStyle.Flat;
+            lblDegRad.ForeColor = Color.FromArgb(49, 27, 146);
+            lblDegRad.Location = new Point(164, 5);
+            lblDegRad.Margin = new Padding(5);
+            lblDegRad.Name = "lblDegRad";
+            lblDegRad.Size = new Size(149, 99);
+            lblDegRad.TabIndex = 1;
+            lblDegRad.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -428,6 +428,7 @@
             btnDegRad.TabIndex = 1;
             btnDegRad.Text = "Rad";
             btnDegRad.UseVisualStyleBackColor = false;
+            btnDegRad.Click += btnRadDeg_Click;
             // 
             // btnSqrt
             // 
@@ -444,6 +445,7 @@
             btnSqrt.TabIndex = 2;
             btnSqrt.Text = "√";
             btnSqrt.UseVisualStyleBackColor = false;
+            btnSqrt.Click += btnCan_Click;
             // 
             // btnSin
             // 
@@ -458,8 +460,9 @@
             btnSin.Name = "btnSin";
             btnSin.Size = new Size(149, 71);
             btnSin.TabIndex = 3;
-            btnSin.Text = "cos";
+            btnSin.Text = "sin";
             btnSin.UseVisualStyleBackColor = false;
+            btnSin.Click += btnSin_Click;
             // 
             // btnCos
             // 
@@ -474,8 +477,9 @@
             btnCos.Name = "btnCos";
             btnCos.Size = new Size(149, 71);
             btnCos.TabIndex = 4;
-            btnCos.Text = "sin";
+            btnCos.Text = "cos";
             btnCos.UseVisualStyleBackColor = false;
+            btnCos.Click += btnCos_Click;
             // 
             // btnTan
             // 
@@ -492,6 +496,7 @@
             btnTan.TabIndex = 5;
             btnTan.Text = "tan";
             btnTan.UseVisualStyleBackColor = false;
+            btnTan.Click += btnTan_Click;
             // 
             // btnLn
             // 
@@ -508,6 +513,7 @@
             btnLn.TabIndex = 6;
             btnLn.Text = "ln";
             btnLn.UseVisualStyleBackColor = false;
+            btnLn.Click += btnLn_Click;
             // 
             // btnLog
             // 
@@ -524,6 +530,7 @@
             btnLog.TabIndex = 7;
             btnLog.Text = "log";
             btnLog.UseVisualStyleBackColor = false;
+            btnLog.Click += btnLog_Click;
             // 
             // btnInverse
             // 
@@ -540,6 +547,7 @@
             btnInverse.TabIndex = 8;
             btnInverse.Text = "1/x";
             btnInverse.UseVisualStyleBackColor = false;
+            btnInverse.Click += btnNghichDao_Click;
             // 
             // btnExpE
             // 
@@ -556,6 +564,7 @@
             btnExpE.TabIndex = 9;
             btnExpE.Text = "eˣ";
             btnExpE.UseVisualStyleBackColor = false;
+            btnExpE.Click += btnMuE_Click;
             // 
             // btnSquare
             // 
@@ -572,6 +581,7 @@
             btnSquare.TabIndex = 10;
             btnSquare.Text = "x²";
             btnSquare.UseVisualStyleBackColor = false;
+            btnSquare.Click += btnBinhPhuong_Click;
             // 
             // btnPower
             // 
@@ -588,6 +598,7 @@
             btnPower.TabIndex = 11;
             btnPower.Text = "xʸ";
             btnPower.UseVisualStyleBackColor = false;
+            btnPower.Click += btnMu_Click;
             // 
             // btnAbs
             // 
@@ -604,6 +615,7 @@
             btnAbs.TabIndex = 12;
             btnAbs.Text = "|x|";
             btnAbs.UseVisualStyleBackColor = false;
+            btnAbs.Click += btnAbs_Click;
             // 
             // btnPi
             // 
@@ -620,6 +632,7 @@
             btnPi.TabIndex = 13;
             btnPi.Text = "π";
             btnPi.UseVisualStyleBackColor = false;
+            btnPi.Click += btnPi_Click;
             // 
             // btnE
             // 
@@ -636,6 +649,7 @@
             btnE.TabIndex = 14;
             btnE.Text = "e";
             btnE.UseVisualStyleBackColor = false;
+            btnE.Click += btnE_Click;
             // 
             // tableLayoutPanel2
             // 
@@ -695,6 +709,7 @@
             btnAc.TabIndex = 0;
             btnAc.Text = "C";
             btnAc.UseVisualStyleBackColor = false;
+            btnAc.Click += btnC_Click;
             // 
             // btnParenthesis
             // 
@@ -709,8 +724,9 @@
             btnParenthesis.Name = "btnParenthesis";
             btnParenthesis.Size = new Size(159, 71);
             btnParenthesis.TabIndex = 1;
-            btnParenthesis.Text = "( )";
+            btnParenthesis.Text = "()";
             btnParenthesis.UseVisualStyleBackColor = false;
+            btnParenthesis.Click += btnNgoac_Click;
             // 
             // btnPercent
             // 
@@ -727,6 +743,7 @@
             btnPercent.TabIndex = 2;
             btnPercent.Text = "%";
             btnPercent.UseVisualStyleBackColor = false;
+            btnPercent.Click += btnPhanTram_Click;
             // 
             // btnDivide
             // 
@@ -743,6 +760,7 @@
             btnDivide.TabIndex = 3;
             btnDivide.Text = "÷";
             btnDivide.UseVisualStyleBackColor = false;
+            btnDivide.Click += btnChia_Click;
             // 
             // btn7
             // 
@@ -759,6 +777,7 @@
             btn7.TabIndex = 4;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = false;
+            btn7.Click += NhapSo_Click;
             // 
             // btn8
             // 
@@ -775,6 +794,7 @@
             btn8.TabIndex = 5;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = false;
+            btn8.Click += NhapSo_Click;
             // 
             // btn9
             // 
@@ -791,6 +811,7 @@
             btn9.TabIndex = 6;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = false;
+            btn9.Click += NhapSo_Click;
             // 
             // btnMultiply
             // 
@@ -805,8 +826,9 @@
             btnMultiply.Name = "btnMultiply";
             btnMultiply.Size = new Size(162, 71);
             btnMultiply.TabIndex = 7;
-            btnMultiply.Text = "X";
+            btnMultiply.Text = "x";
             btnMultiply.UseVisualStyleBackColor = false;
+            btnMultiply.Click += btnNhan_Click;
             // 
             // btn4
             // 
@@ -823,6 +845,7 @@
             btn4.TabIndex = 8;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = false;
+            btn4.Click += NhapSo_Click;
             // 
             // btn5
             // 
@@ -839,6 +862,7 @@
             btn5.TabIndex = 9;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = false;
+            btn5.Click += NhapSo_Click;
             // 
             // btn6
             // 
@@ -855,6 +879,7 @@
             btn6.TabIndex = 10;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = false;
+            btn6.Click += NhapSo_Click;
             // 
             // btnSubtract
             // 
@@ -871,6 +896,7 @@
             btnSubtract.TabIndex = 11;
             btnSubtract.Text = "-";
             btnSubtract.UseVisualStyleBackColor = false;
+            btnSubtract.Click += btnTru_Click;
             // 
             // btn1
             // 
@@ -887,6 +913,7 @@
             btn1.TabIndex = 12;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = false;
+            btn1.Click += NhapSo_Click;
             // 
             // btn2
             // 
@@ -903,6 +930,7 @@
             btn2.TabIndex = 13;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = false;
+            btn2.Click += NhapSo_Click;
             // 
             // btn3
             // 
@@ -919,6 +947,7 @@
             btn3.TabIndex = 14;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = false;
+            btn3.Click += NhapSo_Click;
             // 
             // btnAdd
             // 
@@ -935,6 +964,7 @@
             btnAdd.TabIndex = 15;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnCong_Click;
             // 
             // btnToggleSign
             // 
@@ -951,6 +981,7 @@
             btnToggleSign.TabIndex = 16;
             btnToggleSign.Text = "+/-";
             btnToggleSign.UseVisualStyleBackColor = false;
+            btnToggleSign.Click += btnDoiDau_Click;
             // 
             // btn0
             // 
@@ -967,6 +998,7 @@
             btn0.TabIndex = 17;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
+            btn0.Click += NhapSo_Click;
             // 
             // btnDecimal
             // 
@@ -983,6 +1015,7 @@
             btnDecimal.TabIndex = 18;
             btnDecimal.Text = ",";
             btnDecimal.UseVisualStyleBackColor = false;
+            btnDecimal.Click += btnCham_Click;
             // 
             // btnEqual
             // 
@@ -999,10 +1032,11 @@
             btnEqual.TabIndex = 19;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = false;
+            btnEqual.Click += btnBang_Click;
             // 
             // frmMainCalculator
             // 
-            AutoScaleDimensions = new SizeF(17F, 40F);
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1162, 749);
@@ -1101,6 +1135,6 @@
         private Button btnRuler;
         private Button btnBackspace;
         private Button btnHistory;
-        private Label lblDagRab;
+        private Label lblDegRad;
     }
 }
