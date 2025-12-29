@@ -163,6 +163,7 @@
             btnAcosh.TabIndex = 10;
             btnAcosh.Text = " cosh⁻¹";
             btnAcosh.UseVisualStyleBackColor = false;
+            btnAcosh.Click += btnAcosh_Click;
             // 
             // btnAsinh
             // 
@@ -178,6 +179,7 @@
             btnAsinh.TabIndex = 9;
             btnAsinh.Text = "sinh⁻¹";
             btnAsinh.UseVisualStyleBackColor = false;
+            btnAsinh.Click += btnAsinh_Click;
             // 
             // btnTanh
             // 
@@ -193,6 +195,7 @@
             btnTanh.TabIndex = 8;
             btnTanh.Text = "tanh";
             btnTanh.UseVisualStyleBackColor = false;
+            btnTanh.Click += btnTanh_Click;
             // 
             // btnCosh
             // 
@@ -208,6 +211,7 @@
             btnCosh.TabIndex = 7;
             btnCosh.Text = " cosh";
             btnCosh.UseVisualStyleBackColor = false;
+            btnCosh.Click += btnCosh_Click;
             // 
             // btnSinh
             // 
@@ -223,6 +227,7 @@
             btnSinh.TabIndex = 6;
             btnSinh.Text = "sinh";
             btnSinh.UseVisualStyleBackColor = false;
+            btnSinh.Click += btnSinh_Click;
             // 
             // btnAtan
             // 
@@ -238,6 +243,7 @@
             btnAtan.TabIndex = 5;
             btnAtan.Text = "tan⁻¹";
             btnAtan.UseVisualStyleBackColor = false;
+            btnAtan.Click += btnAtan_Click;
             // 
             // btnAco
             // 
@@ -253,6 +259,7 @@
             btnAco.TabIndex = 4;
             btnAco.Text = "cos⁻¹";
             btnAco.UseVisualStyleBackColor = false;
+            btnAco.Click += btnAcos_Click;
             // 
             // btnAsin
             // 
@@ -268,6 +275,7 @@
             btnAsin.TabIndex = 3;
             btnAsin.Text = "sin⁻¹";
             btnAsin.UseVisualStyleBackColor = false;
+            btnAsin.Click += btnAsin_Click;
             // 
             // btnCanBac3
             // 
