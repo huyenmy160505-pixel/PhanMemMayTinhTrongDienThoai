@@ -183,7 +183,6 @@
             rtbMainDisplay.Location = new Point(0, 0);
             rtbMainDisplay.Margin = new Padding(5);
             rtbMainDisplay.Name = "rtbMainDisplay";
-            rtbMainDisplay.ReadOnly = true;
             rtbMainDisplay.ScrollBars = RichTextBoxScrollBars.None;
             rtbMainDisplay.Size = new Size(1162, 111);
             rtbMainDisplay.TabIndex = 0;
@@ -222,6 +221,7 @@
             lblPreview.Size = new Size(1162, 115);
             lblPreview.TabIndex = 1;
             lblPreview.TextAlign = ContentAlignment.TopRight;
+            lblPreview.Click += lblPreview_Click;
             // 
             // label1
             // 
@@ -338,6 +338,7 @@
             btnBackspace.TabIndex = 1;
             btnBackspace.Text = "⌫ ";
             btnBackspace.UseVisualStyleBackColor = true;
+            btnBackspace.Click += btnXoa_Click;
             // 
             // splitContainer4
             // 
@@ -1036,7 +1037,7 @@
             // 
             // frmMainCalculator
             // 
-            AutoScaleDimensions = new SizeF(14F, 32F);
+            AutoScaleDimensions = new SizeF(17F, 40F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1162, 749);

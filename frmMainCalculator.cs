@@ -469,24 +469,26 @@ namespace PhanMemMayTinhTrongDienThoai
         // CẬP NHẬT LẠI HÀM TÍNH TOÁN (PHIÊN BẢN SỬA LỖI e^ VÀ ASINH)
         private double TinhGiaTriBieuThuc(string bieuThuc)
         {
-            // 1. MẸO SỬA LỖI e^: 
-            // Đổi "e^" thành hàm "Exp" để máy tính dễ hiểu hơn
-            // Ví dụ: e^(2) sẽ thành Exp(2)
-            string s = bieuThuc.Replace("e^", "Exp");
+            string s = bieuThuc;
+
+            // 1. QUY ĐỔI MŨ ĐẶC BIỆT THÀNH HÀM (Để xử lý được ngoặc)
+            s = s.Replace("e^", "Exp");      // e^(3) -> Exp(3)
+            s = s.Replace("2^", "PowTwo");   // 2^(3) -> PowTwo(3)
 
             // 2. Chuẩn hóa các ký tự khác
             s = s.Replace(",", ".")
                  .Replace("×", "*")
                  .Replace("÷", "/")
                  .Replace("%", "*0.01")
-                 .Replace("π", Math.PI.ToString())
-                 .Replace("e", Math.E.ToString()); // Chữ e đứng một mình thì đổi thành số 2.718...
+                 .Replace("π", Math.PI.ToString()) // Thay số Pi
+                 .Replace("e", Math.E.ToString()); // Thay số e
 
             // 3. Xử lý Giai thừa (!)
             s = XuLyGiaiThua(s);
 
-            // 4. Xử lý Hàm Exp (Chính là e mũ) - MỚI THÊM
-            s = XuLyHam(s, "Exp", x => Math.Exp(x));
+            // --- Nhóm Mũ đặc biệt ---
+            s = XuLyHam(s, "Exp", x => Math.Exp(x));           // Hàm e^x
+            s = XuLyHam(s, "PowTwo", x => Math.Pow(2, x));     // Hàm 2^x
 
             // 5. Xử lý Lượng giác thường
             s = XuLyHam(s, "sin", x => isRadian ? Math.Sin(x) : Math.Sin(x * Math.PI / 180));
@@ -747,6 +749,10 @@ namespace PhanMemMayTinhTrongDienThoai
             rtbMainDisplay.Focus();
         }
 
+        private void lblPreview_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
