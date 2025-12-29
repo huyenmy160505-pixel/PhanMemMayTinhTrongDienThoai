@@ -45,6 +45,8 @@
             txtDienTich_KetQua = new TextBox();
             lblDienTich_KyHieuDich = new Label();
             pnlDienTich_Phu = new FlowLayoutPanel();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            ucBanPhim1 = new ucBanPhim();
             tabPage1 = new TabPage();
             splitContainer4 = new SplitContainer();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -59,6 +61,8 @@
             txtDoDai_Dich = new TextBox();
             lblDoDai_KyHieuDich = new Label();
             pnlDoDai_Phu = new FlowLayoutPanel();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            ucBanPhim2 = new ucBanPhim();
             tabPage3 = new TabPage();
             splitContainer5 = new SplitContainer();
             tableLayoutPanel3 = new TableLayoutPanel();
@@ -72,6 +76,8 @@
             txtNhietDo_KetQua = new TextBox();
             lbalNhietDo_KyHieuDich = new Label();
             pnlNhietDo_Phu = new FlowLayoutPanel();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            ucBanPhim3 = new ucBanPhim();
             tabPage4 = new TabPage();
             splitContainer6 = new SplitContainer();
             tableLayoutPanel4 = new TableLayoutPanel();
@@ -85,6 +91,8 @@
             txtTheTich_KetQua = new TextBox();
             lblTheTich_KyHieuDich = new Label();
             pnlTheTich_Phu = new FlowLayoutPanel();
+            tableLayoutPanel17 = new TableLayoutPanel();
+            ucBanPhim8 = new ucBanPhim();
             tabPage5 = new TabPage();
             splitContainer12 = new SplitContainer();
             tableLayoutPanel6 = new TableLayoutPanel();
@@ -98,6 +106,8 @@
             txtKhoiLuong_KetQua = new TextBox();
             lblKhoiLuong_KyHieuDich = new Label();
             pnlKhoiLuong_Phu = new FlowLayoutPanel();
+            tableLayoutPanel16 = new TableLayoutPanel();
+            ucBanPhim7 = new ucBanPhim();
             tabPage6 = new TabPage();
             splitContainer13 = new SplitContainer();
             tableLayoutPanel7 = new TableLayoutPanel();
@@ -111,6 +121,8 @@
             txtDuLieu_KetQua = new TextBox();
             lblDuLieu_KyHieuDich = new Label();
             pnlDuLieu_Phu = new FlowLayoutPanel();
+            tableLayoutPanel15 = new TableLayoutPanel();
+            ucBanPhim6 = new ucBanPhim();
             tabPage7 = new TabPage();
             splitContainer14 = new SplitContainer();
             tableLayoutPanel8 = new TableLayoutPanel();
@@ -124,6 +136,8 @@
             txtTocDo_KetQua = new TextBox();
             lblTocDo_KyHieuDich = new Label();
             pnlTocDo_Phu = new FlowLayoutPanel();
+            tableLayoutPanel14 = new TableLayoutPanel();
+            ucBanPhim5 = new ucBanPhim();
             tabPage8 = new TabPage();
             splitContainer15 = new SplitContainer();
             tableLayoutPanel9 = new TableLayoutPanel();
@@ -137,11 +151,14 @@
             txtThoiGian_KetQua = new TextBox();
             lblThoiGian_KyHieuDich = new Label();
             pnlThoiGian_Phu = new FlowLayoutPanel();
+            tableLayoutPanel13 = new TableLayoutPanel();
+            ucBanPhim4 = new ucBanPhim();
             panel1.SuspendLayout();
             tabChuyenDoi.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -153,9 +170,11 @@
             splitContainer3.Panel1.SuspendLayout();
             splitContainer3.Panel2.SuspendLayout();
             splitContainer3.SuspendLayout();
+            tableLayoutPanel10.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer4).BeginInit();
             splitContainer4.Panel1.SuspendLayout();
+            splitContainer4.Panel2.SuspendLayout();
             splitContainer4.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
@@ -168,9 +187,11 @@
             splitContainer8.Panel1.SuspendLayout();
             splitContainer8.Panel2.SuspendLayout();
             splitContainer8.SuspendLayout();
+            tableLayoutPanel11.SuspendLayout();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer5).BeginInit();
             splitContainer5.Panel1.SuspendLayout();
+            splitContainer5.Panel2.SuspendLayout();
             splitContainer5.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             panel5.SuspendLayout();
@@ -182,9 +203,11 @@
             splitContainer11.Panel1.SuspendLayout();
             splitContainer11.Panel2.SuspendLayout();
             splitContainer11.SuspendLayout();
+            tableLayoutPanel12.SuspendLayout();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer6).BeginInit();
             splitContainer6.Panel1.SuspendLayout();
+            splitContainer6.Panel2.SuspendLayout();
             splitContainer6.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             panel4.SuspendLayout();
@@ -196,9 +219,11 @@
             splitContainer10.Panel1.SuspendLayout();
             splitContainer10.Panel2.SuspendLayout();
             splitContainer10.SuspendLayout();
+            tableLayoutPanel17.SuspendLayout();
             tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer12).BeginInit();
             splitContainer12.Panel1.SuspendLayout();
+            splitContainer12.Panel2.SuspendLayout();
             splitContainer12.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             panel6.SuspendLayout();
@@ -210,9 +235,11 @@
             splitContainer17.Panel1.SuspendLayout();
             splitContainer17.Panel2.SuspendLayout();
             splitContainer17.SuspendLayout();
+            tableLayoutPanel16.SuspendLayout();
             tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer13).BeginInit();
             splitContainer13.Panel1.SuspendLayout();
+            splitContainer13.Panel2.SuspendLayout();
             splitContainer13.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
             panel7.SuspendLayout();
@@ -224,9 +251,11 @@
             splitContainer19.Panel1.SuspendLayout();
             splitContainer19.Panel2.SuspendLayout();
             splitContainer19.SuspendLayout();
+            tableLayoutPanel15.SuspendLayout();
             tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer14).BeginInit();
             splitContainer14.Panel1.SuspendLayout();
+            splitContainer14.Panel2.SuspendLayout();
             splitContainer14.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             panel8.SuspendLayout();
@@ -238,9 +267,11 @@
             splitContainer21.Panel1.SuspendLayout();
             splitContainer21.Panel2.SuspendLayout();
             splitContainer21.SuspendLayout();
+            tableLayoutPanel14.SuspendLayout();
             tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer15).BeginInit();
             splitContainer15.Panel1.SuspendLayout();
+            splitContainer15.Panel2.SuspendLayout();
             splitContainer15.SuspendLayout();
             tableLayoutPanel9.SuspendLayout();
             panel9.SuspendLayout();
@@ -252,6 +283,7 @@
             splitContainer23.Panel1.SuspendLayout();
             splitContainer23.Panel2.SuspendLayout();
             splitContainer23.SuspendLayout();
+            tableLayoutPanel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -268,11 +300,11 @@
             // label1
             // 
             label1.Dock = DockStyle.Left;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label1.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(49, 27, 146);
             label1.Location = new Point(50, 0);
             label1.Name = "label1";
-            label1.Size = new Size(234, 60);
+            label1.Size = new Size(359, 60);
             label1.TabIndex = 3;
             label1.Text = "Chuyển đổi đơn vị";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -282,7 +314,7 @@
             btnThoat.Dock = DockStyle.Left;
             btnThoat.FlatAppearance.BorderSize = 0;
             btnThoat.FlatStyle = FlatStyle.Flat;
-            btnThoat.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            btnThoat.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             btnThoat.ForeColor = Color.FromArgb(49, 27, 146);
             btnThoat.Location = new Point(0, 0);
             btnThoat.Name = "btnThoat";
@@ -303,7 +335,7 @@
             tabChuyenDoi.Controls.Add(tabPage7);
             tabChuyenDoi.Controls.Add(tabPage8);
             tabChuyenDoi.Dock = DockStyle.Fill;
-            tabChuyenDoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tabChuyenDoi.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tabChuyenDoi.Location = new Point(0, 60);
             tabChuyenDoi.Name = "tabChuyenDoi";
             tabChuyenDoi.SelectedIndex = 0;
@@ -315,10 +347,10 @@
             // 
             tabPage2.BackColor = Color.White;
             tabPage2.Controls.Add(splitContainer1);
-            tabPage2.Location = new Point(4, 41);
+            tabPage2.Location = new Point(4, 63);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1652, 880);
+            tabPage2.Size = new Size(1652, 858);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Diện tích";
             // 
@@ -332,7 +364,11 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.Controls.Add(tableLayoutPanel1);
-            splitContainer1.Size = new Size(1646, 874);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(tableLayoutPanel10);
+            splitContainer1.Size = new Size(1646, 852);
             splitContainer1.SplitterDistance = 823;
             splitContainer1.SplitterWidth = 3;
             splitContainer1.TabIndex = 0;
@@ -353,7 +389,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(823, 874);
+            tableLayoutPanel1.Size = new Size(823, 852);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // panel2
@@ -363,7 +399,7 @@
             panel2.Location = new Point(1, 3);
             panel2.Margin = new Padding(1, 3, 1, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(821, 212);
+            panel2.Size = new Size(821, 207);
             panel2.TabIndex = 0;
             // 
             // splitContainer2
@@ -382,8 +418,8 @@
             // 
             splitContainer2.Panel2.Controls.Add(txtDienTich_SoNhap);
             splitContainer2.Panel2.Controls.Add(lblDienTich_KyHieuNguon);
-            splitContainer2.Size = new Size(821, 212);
-            splitContainer2.SplitterDistance = 156;
+            splitContainer2.Size = new Size(821, 207);
+            splitContainer2.SplitterDistance = 152;
             splitContainer2.SplitterWidth = 3;
             splitContainer2.TabIndex = 1;
             // 
@@ -392,47 +428,51 @@
             cboDienTich_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDienTich_Nguon.Dock = DockStyle.Left;
             cboDienTich_Nguon.FlatStyle = FlatStyle.Flat;
-            cboDienTich_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDienTich_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDienTich_Nguon.ForeColor = Color.BlueViolet;
             cboDienTich_Nguon.FormattingEnabled = true;
             cboDienTich_Nguon.Items.AddRange(new object[] { "Acre (ac)", "Are (a)", "Hectare (ha)", "Centimet vuông (cm²)", "Feet vuông (ft²)", "Inch vuông (in²)", "Mét vuông (m²)" });
             cboDienTich_Nguon.Location = new Point(0, 0);
             cboDienTich_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboDienTich_Nguon.Name = "cboDienTich_Nguon";
-            cboDienTich_Nguon.Size = new Size(98, 40);
+            cboDienTich_Nguon.Size = new Size(98, 54);
             cboDienTich_Nguon.TabIndex = 1;
+            cboDienTich_Nguon.UseWaitCursor = true;
             // 
             // txtDienTich_SoNhap
             // 
             txtDienTich_SoNhap.BackColor = Color.White;
             txtDienTich_SoNhap.BorderStyle = BorderStyle.None;
             txtDienTich_SoNhap.Dock = DockStyle.Fill;
-            txtDienTich_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDienTich_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDienTich_SoNhap.ForeColor = Color.BlueViolet;
             txtDienTich_SoNhap.Location = new Point(0, 0);
             txtDienTich_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtDienTich_SoNhap.Name = "txtDienTich_SoNhap";
-            txtDienTich_SoNhap.Size = new Size(787, 55);
+            txtDienTich_SoNhap.Size = new Size(787, 46);
             txtDienTich_SoNhap.TabIndex = 1;
             txtDienTich_SoNhap.TextAlign = HorizontalAlignment.Right;
+            txtDienTich_SoNhap.UseWaitCursor = true;
             // 
             // lblDienTich_KyHieuNguon
             // 
             lblDienTich_KyHieuNguon.Dock = DockStyle.Right;
-            lblDienTich_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDienTich_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDienTich_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblDienTich_KyHieuNguon.Location = new Point(787, 0);
             lblDienTich_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblDienTich_KyHieuNguon.Name = "lblDienTich_KyHieuNguon";
             lblDienTich_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblDienTich_KyHieuNguon.Size = new Size(34, 53);
+            lblDienTich_KyHieuNguon.Size = new Size(34, 52);
             lblDienTich_KyHieuNguon.TabIndex = 0;
-            lblDienTich_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblDienTich_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
+            lblDienTich_KyHieuNguon.UseWaitCursor = true;
+            lblDienTich_KyHieuNguon.Click += lblDienTich_KyHieuNguon_Click;
             // 
             // splitContainer3
             // 
             splitContainer3.Dock = DockStyle.Fill;
-            splitContainer3.Location = new Point(1, 221);
+            splitContainer3.Location = new Point(1, 216);
             splitContainer3.Margin = new Padding(1, 3, 1, 3);
             splitContainer3.Name = "splitContainer3";
             splitContainer3.Orientation = Orientation.Horizontal;
@@ -445,8 +485,8 @@
             // 
             splitContainer3.Panel2.Controls.Add(txtDienTich_KetQua);
             splitContainer3.Panel2.Controls.Add(lblDienTich_KyHieuDich);
-            splitContainer3.Size = new Size(821, 212);
-            splitContainer3.SplitterDistance = 156;
+            splitContainer3.Size = new Size(821, 207);
+            splitContainer3.SplitterDistance = 152;
             splitContainer3.SplitterWidth = 3;
             splitContainer3.TabIndex = 1;
             // 
@@ -455,64 +495,91 @@
             cboDienTich_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDienTich_Dich.Dock = DockStyle.Left;
             cboDienTich_Dich.FlatStyle = FlatStyle.Flat;
-            cboDienTich_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDienTich_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDienTich_Dich.ForeColor = Color.BlueViolet;
             cboDienTich_Dich.FormattingEnabled = true;
             cboDienTich_Dich.Items.AddRange(new object[] { "Acre (ac)", "Are (a)", "Hectare (ha)", "Centimet vuông (cm²)", "Feet vuông (ft²)", "Inch vuông (in²)", "Mét vuông (m²)" });
             cboDienTich_Dich.Location = new Point(0, 0);
             cboDienTich_Dich.Margin = new Padding(1, 3, 1, 3);
             cboDienTich_Dich.Name = "cboDienTich_Dich";
-            cboDienTich_Dich.Size = new Size(98, 40);
+            cboDienTich_Dich.Size = new Size(98, 54);
             cboDienTich_Dich.TabIndex = 2;
+            cboDienTich_Dich.UseWaitCursor = true;
             // 
             // txtDienTich_KetQua
             // 
             txtDienTich_KetQua.BackColor = Color.White;
             txtDienTich_KetQua.BorderStyle = BorderStyle.None;
             txtDienTich_KetQua.Dock = DockStyle.Fill;
-            txtDienTich_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDienTich_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDienTich_KetQua.ForeColor = Color.BlueViolet;
             txtDienTich_KetQua.Location = new Point(0, 0);
             txtDienTich_KetQua.Margin = new Padding(1, 3, 1, 3);
             txtDienTich_KetQua.Name = "txtDienTich_KetQua";
-            txtDienTich_KetQua.Size = new Size(787, 55);
+            txtDienTich_KetQua.Size = new Size(787, 46);
             txtDienTich_KetQua.TabIndex = 2;
             txtDienTich_KetQua.TextAlign = HorizontalAlignment.Right;
+            txtDienTich_KetQua.UseWaitCursor = true;
             // 
             // lblDienTich_KyHieuDich
             // 
             lblDienTich_KyHieuDich.Dock = DockStyle.Right;
-            lblDienTich_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDienTich_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDienTich_KyHieuDich.ForeColor = Color.BlueViolet;
             lblDienTich_KyHieuDich.Location = new Point(787, 0);
             lblDienTich_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblDienTich_KyHieuDich.Name = "lblDienTich_KyHieuDich";
             lblDienTich_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblDienTich_KyHieuDich.Size = new Size(34, 53);
+            lblDienTich_KyHieuDich.Size = new Size(34, 52);
             lblDienTich_KyHieuDich.TabIndex = 1;
-            lblDienTich_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblDienTich_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
+            lblDienTich_KyHieuDich.UseWaitCursor = true;
             // 
             // pnlDienTich_Phu
             // 
             pnlDienTich_Phu.AutoScroll = true;
             pnlDienTich_Phu.Dock = DockStyle.Fill;
             pnlDienTich_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlDienTich_Phu.Location = new Point(1, 439);
+            pnlDienTich_Phu.Location = new Point(1, 429);
             pnlDienTich_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlDienTich_Phu.Name = "pnlDienTich_Phu";
             pnlDienTich_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlDienTich_Phu.Size = new Size(821, 432);
+            pnlDienTich_Phu.Size = new Size(821, 420);
             pnlDienTich_Phu.TabIndex = 2;
             pnlDienTich_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.ColumnCount = 3;
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel10.Controls.Add(ucBanPhim1, 1, 1);
+            tableLayoutPanel10.Dock = DockStyle.Fill;
+            tableLayoutPanel10.Location = new Point(0, 0);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 3;
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel10.Size = new Size(820, 852);
+            tableLayoutPanel10.TabIndex = 0;
+            // 
+            // ucBanPhim1
+            // 
+            ucBanPhim1.Location = new Point(167, 173);
+            ucBanPhim1.Name = "ucBanPhim1";
+            ucBanPhim1.Size = new Size(486, 505);
+            ucBanPhim1.TabIndex = 0;
             // 
             // tabPage1
             // 
             tabPage1.BackColor = Color.White;
             tabPage1.Controls.Add(splitContainer4);
-            tabPage1.Location = new Point(4, 41);
+            tabPage1.Location = new Point(4, 63);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1652, 880);
+            tabPage1.Size = new Size(1652, 858);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Độ dài";
             // 
@@ -529,7 +596,8 @@
             // splitContainer4.Panel2
             // 
             splitContainer4.Panel2.BackColor = Color.White;
-            splitContainer4.Size = new Size(1646, 874);
+            splitContainer4.Panel2.Controls.Add(tableLayoutPanel11);
+            splitContainer4.Size = new Size(1646, 852);
             splitContainer4.SplitterDistance = 823;
             splitContainer4.SplitterWidth = 3;
             splitContainer4.TabIndex = 0;
@@ -545,7 +613,7 @@
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Size = new Size(823, 874);
+            tableLayoutPanel2.Size = new Size(823, 852);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -564,7 +632,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(821, 868);
+            tableLayoutPanel5.Size = new Size(821, 846);
             tableLayoutPanel5.TabIndex = 1;
             // 
             // panel3
@@ -574,7 +642,7 @@
             panel3.Location = new Point(1, 3);
             panel3.Margin = new Padding(1, 3, 1, 3);
             panel3.Name = "panel3";
-            panel3.Size = new Size(819, 211);
+            panel3.Size = new Size(819, 205);
             panel3.TabIndex = 0;
             // 
             // splitContainer7
@@ -593,8 +661,8 @@
             // 
             splitContainer7.Panel2.Controls.Add(txtDoDai_SoNhap);
             splitContainer7.Panel2.Controls.Add(lblDoDai_KyHieuNguon);
-            splitContainer7.Size = new Size(819, 211);
-            splitContainer7.SplitterDistance = 153;
+            splitContainer7.Size = new Size(819, 205);
+            splitContainer7.SplitterDistance = 148;
             splitContainer7.SplitterWidth = 3;
             splitContainer7.TabIndex = 1;
             // 
@@ -603,14 +671,14 @@
             cboDoDai_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDoDai_Nguon.Dock = DockStyle.Left;
             cboDoDai_Nguon.FlatStyle = FlatStyle.Flat;
-            cboDoDai_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDoDai_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDoDai_Nguon.ForeColor = Color.BlueViolet;
             cboDoDai_Nguon.FormattingEnabled = true;
             cboDoDai_Nguon.Items.AddRange(new object[] { "Milimet (mm)", "Centimet (cm)", "Mét (m)", "Kilomet (km)", "Inch (in)", "Feet (ft)", "Yard (yd)", "Dặm (mi)", "Hải lý (NM)", "Dặm (mil)" });
             cboDoDai_Nguon.Location = new Point(0, 0);
             cboDoDai_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboDoDai_Nguon.Name = "cboDoDai_Nguon";
-            cboDoDai_Nguon.Size = new Size(98, 40);
+            cboDoDai_Nguon.Size = new Size(98, 54);
             cboDoDai_Nguon.TabIndex = 1;
             // 
             // txtDoDai_SoNhap
@@ -618,32 +686,32 @@
             txtDoDai_SoNhap.BackColor = Color.White;
             txtDoDai_SoNhap.BorderStyle = BorderStyle.None;
             txtDoDai_SoNhap.Dock = DockStyle.Fill;
-            txtDoDai_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDoDai_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDoDai_SoNhap.ForeColor = Color.BlueViolet;
             txtDoDai_SoNhap.Location = new Point(0, 0);
             txtDoDai_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtDoDai_SoNhap.Name = "txtDoDai_SoNhap";
-            txtDoDai_SoNhap.Size = new Size(785, 55);
+            txtDoDai_SoNhap.Size = new Size(785, 46);
             txtDoDai_SoNhap.TabIndex = 1;
             txtDoDai_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lblDoDai_KyHieuNguon
             // 
             lblDoDai_KyHieuNguon.Dock = DockStyle.Right;
-            lblDoDai_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDoDai_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDoDai_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblDoDai_KyHieuNguon.Location = new Point(785, 0);
             lblDoDai_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblDoDai_KyHieuNguon.Name = "lblDoDai_KyHieuNguon";
             lblDoDai_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblDoDai_KyHieuNguon.Size = new Size(34, 55);
+            lblDoDai_KyHieuNguon.Size = new Size(34, 54);
             lblDoDai_KyHieuNguon.TabIndex = 0;
-            lblDoDai_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblDoDai_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer8
             // 
             splitContainer8.Dock = DockStyle.Fill;
-            splitContainer8.Location = new Point(1, 220);
+            splitContainer8.Location = new Point(1, 214);
             splitContainer8.Margin = new Padding(1, 3, 1, 3);
             splitContainer8.Name = "splitContainer8";
             splitContainer8.Orientation = Orientation.Horizontal;
@@ -656,8 +724,8 @@
             // 
             splitContainer8.Panel2.Controls.Add(txtDoDai_Dich);
             splitContainer8.Panel2.Controls.Add(lblDoDai_KyHieuDich);
-            splitContainer8.Size = new Size(819, 211);
-            splitContainer8.SplitterDistance = 153;
+            splitContainer8.Size = new Size(819, 205);
+            splitContainer8.SplitterDistance = 148;
             splitContainer8.SplitterWidth = 3;
             splitContainer8.TabIndex = 1;
             // 
@@ -666,14 +734,14 @@
             cboDoDai_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDoDai_Dich.Dock = DockStyle.Left;
             cboDoDai_Dich.FlatStyle = FlatStyle.Flat;
-            cboDoDai_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDoDai_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDoDai_Dich.ForeColor = Color.BlueViolet;
             cboDoDai_Dich.FormattingEnabled = true;
             cboDoDai_Dich.Items.AddRange(new object[] { "Centimet (cm)", "Mét (m)", "Kilomet (km)", "Inch (in)", "Feet (ft)", "Yard (yd)", "Dặm (mi)", "Hải lý (NM)", "Dặm (mil)" });
             cboDoDai_Dich.Location = new Point(0, 0);
             cboDoDai_Dich.Margin = new Padding(1, 3, 1, 3);
             cboDoDai_Dich.Name = "cboDoDai_Dich";
-            cboDoDai_Dich.Size = new Size(98, 40);
+            cboDoDai_Dich.Size = new Size(98, 54);
             cboDoDai_Dich.TabIndex = 2;
             // 
             // txtDoDai_Dich
@@ -681,50 +749,74 @@
             txtDoDai_Dich.BackColor = Color.White;
             txtDoDai_Dich.BorderStyle = BorderStyle.None;
             txtDoDai_Dich.Dock = DockStyle.Fill;
-            txtDoDai_Dich.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDoDai_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDoDai_Dich.ForeColor = Color.BlueViolet;
             txtDoDai_Dich.Location = new Point(0, 0);
             txtDoDai_Dich.Margin = new Padding(1, 3, 1, 3);
             txtDoDai_Dich.Name = "txtDoDai_Dich";
-            txtDoDai_Dich.Size = new Size(785, 55);
+            txtDoDai_Dich.Size = new Size(785, 46);
             txtDoDai_Dich.TabIndex = 2;
             txtDoDai_Dich.TextAlign = HorizontalAlignment.Right;
             // 
             // lblDoDai_KyHieuDich
             // 
             lblDoDai_KyHieuDich.Dock = DockStyle.Right;
-            lblDoDai_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDoDai_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDoDai_KyHieuDich.ForeColor = Color.BlueViolet;
             lblDoDai_KyHieuDich.Location = new Point(785, 0);
             lblDoDai_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblDoDai_KyHieuDich.Name = "lblDoDai_KyHieuDich";
             lblDoDai_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblDoDai_KyHieuDich.Size = new Size(34, 55);
+            lblDoDai_KyHieuDich.Size = new Size(34, 54);
             lblDoDai_KyHieuDich.TabIndex = 1;
-            lblDoDai_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblDoDai_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlDoDai_Phu
             // 
             pnlDoDai_Phu.AutoScroll = true;
             pnlDoDai_Phu.Dock = DockStyle.Fill;
             pnlDoDai_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlDoDai_Phu.Location = new Point(1, 437);
+            pnlDoDai_Phu.Location = new Point(1, 425);
             pnlDoDai_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlDoDai_Phu.Name = "pnlDoDai_Phu";
             pnlDoDai_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlDoDai_Phu.Size = new Size(819, 428);
+            pnlDoDai_Phu.Size = new Size(819, 418);
             pnlDoDai_Phu.TabIndex = 2;
             pnlDoDai_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.ColumnCount = 3;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel11.Controls.Add(ucBanPhim2, 1, 1);
+            tableLayoutPanel11.Dock = DockStyle.Fill;
+            tableLayoutPanel11.Location = new Point(0, 0);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 3;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel11.Size = new Size(820, 852);
+            tableLayoutPanel11.TabIndex = 1;
+            // 
+            // ucBanPhim2
+            // 
+            ucBanPhim2.Location = new Point(167, 173);
+            ucBanPhim2.Name = "ucBanPhim2";
+            ucBanPhim2.Size = new Size(486, 505);
+            ucBanPhim2.TabIndex = 0;
             // 
             // tabPage3
             // 
             tabPage3.BackColor = Color.White;
             tabPage3.Controls.Add(splitContainer5);
-            tabPage3.Location = new Point(4, 41);
+            tabPage3.Location = new Point(4, 63);
             tabPage3.Margin = new Padding(4, 5, 4, 5);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(4, 5, 4, 5);
-            tabPage3.Size = new Size(1652, 880);
+            tabPage3.Size = new Size(1652, 858);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "Nhiệt độ";
             // 
@@ -741,7 +833,8 @@
             // splitContainer5.Panel2
             // 
             splitContainer5.Panel2.BackColor = Color.White;
-            splitContainer5.Size = new Size(1644, 870);
+            splitContainer5.Panel2.Controls.Add(tableLayoutPanel12);
+            splitContainer5.Size = new Size(1644, 848);
             splitContainer5.SplitterDistance = 822;
             splitContainer5.SplitterWidth = 3;
             splitContainer5.TabIndex = 0;
@@ -762,7 +855,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(822, 870);
+            tableLayoutPanel3.Size = new Size(822, 848);
             tableLayoutPanel3.TabIndex = 2;
             // 
             // panel5
@@ -772,7 +865,7 @@
             panel5.Location = new Point(1, 2);
             panel5.Margin = new Padding(1, 2, 1, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(820, 213);
+            panel5.Size = new Size(820, 208);
             panel5.TabIndex = 0;
             // 
             // splitContainer9
@@ -792,8 +885,8 @@
             // 
             splitContainer9.Panel2.Controls.Add(txtNhietDo_SoNhap);
             splitContainer9.Panel2.Controls.Add(lbalNhietDo_KyHieuNguon);
-            splitContainer9.Size = new Size(820, 213);
-            splitContainer9.SplitterDistance = 155;
+            splitContainer9.Size = new Size(820, 208);
+            splitContainer9.SplitterDistance = 151;
             splitContainer9.SplitterWidth = 2;
             splitContainer9.TabIndex = 1;
             // 
@@ -802,14 +895,14 @@
             cboNhietDo_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboNhietDo_Nguon.Dock = DockStyle.Left;
             cboNhietDo_Nguon.FlatStyle = FlatStyle.Flat;
-            cboNhietDo_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboNhietDo_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboNhietDo_Nguon.ForeColor = Color.BlueViolet;
             cboNhietDo_Nguon.FormattingEnabled = true;
             cboNhietDo_Nguon.Items.AddRange(new object[] { "Độ C (°C)", "Độ F (°F) ", "Kelvin (K)" });
             cboNhietDo_Nguon.Location = new Point(0, 0);
             cboNhietDo_Nguon.Margin = new Padding(1, 2, 1, 2);
             cboNhietDo_Nguon.Name = "cboNhietDo_Nguon";
-            cboNhietDo_Nguon.Size = new Size(98, 40);
+            cboNhietDo_Nguon.Size = new Size(98, 54);
             cboNhietDo_Nguon.TabIndex = 1;
             // 
             // txtNhietDo_SoNhap
@@ -817,33 +910,33 @@
             txtNhietDo_SoNhap.BackColor = Color.White;
             txtNhietDo_SoNhap.BorderStyle = BorderStyle.None;
             txtNhietDo_SoNhap.Dock = DockStyle.Fill;
-            txtNhietDo_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNhietDo_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtNhietDo_SoNhap.ForeColor = Color.BlueViolet;
             txtNhietDo_SoNhap.Location = new Point(0, 0);
             txtNhietDo_SoNhap.Margin = new Padding(1, 2, 1, 2);
             txtNhietDo_SoNhap.Multiline = true;
             txtNhietDo_SoNhap.Name = "txtNhietDo_SoNhap";
-            txtNhietDo_SoNhap.Size = new Size(796, 56);
+            txtNhietDo_SoNhap.Size = new Size(796, 55);
             txtNhietDo_SoNhap.TabIndex = 1;
             txtNhietDo_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lbalNhietDo_KyHieuNguon
             // 
             lbalNhietDo_KyHieuNguon.Dock = DockStyle.Right;
-            lbalNhietDo_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lbalNhietDo_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lbalNhietDo_KyHieuNguon.ForeColor = Color.BlueViolet;
             lbalNhietDo_KyHieuNguon.Location = new Point(796, 0);
             lbalNhietDo_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lbalNhietDo_KyHieuNguon.Name = "lbalNhietDo_KyHieuNguon";
             lbalNhietDo_KyHieuNguon.Padding = new Padding(0, 0, 3, 3);
-            lbalNhietDo_KyHieuNguon.Size = new Size(24, 56);
+            lbalNhietDo_KyHieuNguon.Size = new Size(24, 55);
             lbalNhietDo_KyHieuNguon.TabIndex = 0;
-            lbalNhietDo_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lbalNhietDo_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer11
             // 
             splitContainer11.Dock = DockStyle.Fill;
-            splitContainer11.Location = new Point(1, 219);
+            splitContainer11.Location = new Point(1, 214);
             splitContainer11.Margin = new Padding(1, 2, 1, 2);
             splitContainer11.Name = "splitContainer11";
             splitContainer11.Orientation = Orientation.Horizontal;
@@ -857,8 +950,8 @@
             // 
             splitContainer11.Panel2.Controls.Add(txtNhietDo_KetQua);
             splitContainer11.Panel2.Controls.Add(lbalNhietDo_KyHieuDich);
-            splitContainer11.Size = new Size(820, 213);
-            splitContainer11.SplitterDistance = 155;
+            splitContainer11.Size = new Size(820, 208);
+            splitContainer11.SplitterDistance = 151;
             splitContainer11.SplitterWidth = 2;
             splitContainer11.TabIndex = 1;
             // 
@@ -867,14 +960,14 @@
             cboNhietDo_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboNhietDo_Dich.Dock = DockStyle.Left;
             cboNhietDo_Dich.FlatStyle = FlatStyle.Flat;
-            cboNhietDo_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboNhietDo_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboNhietDo_Dich.ForeColor = Color.BlueViolet;
             cboNhietDo_Dich.FormattingEnabled = true;
             cboNhietDo_Dich.Items.AddRange(new object[] { "Độ C (°C)", "Độ F (°F) ", "Kelvin (K)" });
             cboNhietDo_Dich.Location = new Point(0, 0);
             cboNhietDo_Dich.Margin = new Padding(1, 2, 1, 2);
             cboNhietDo_Dich.Name = "cboNhietDo_Dich";
-            cboNhietDo_Dich.Size = new Size(98, 40);
+            cboNhietDo_Dich.Size = new Size(98, 54);
             cboNhietDo_Dich.TabIndex = 2;
             // 
             // txtNhietDo_KetQua
@@ -882,27 +975,27 @@
             txtNhietDo_KetQua.BackColor = Color.White;
             txtNhietDo_KetQua.BorderStyle = BorderStyle.None;
             txtNhietDo_KetQua.Dock = DockStyle.Fill;
-            txtNhietDo_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNhietDo_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtNhietDo_KetQua.ForeColor = Color.BlueViolet;
             txtNhietDo_KetQua.Location = new Point(0, 0);
             txtNhietDo_KetQua.Margin = new Padding(1, 2, 1, 2);
             txtNhietDo_KetQua.Name = "txtNhietDo_KetQua";
-            txtNhietDo_KetQua.Size = new Size(796, 55);
+            txtNhietDo_KetQua.Size = new Size(796, 46);
             txtNhietDo_KetQua.TabIndex = 2;
             txtNhietDo_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lbalNhietDo_KyHieuDich
             // 
             lbalNhietDo_KyHieuDich.Dock = DockStyle.Right;
-            lbalNhietDo_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lbalNhietDo_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lbalNhietDo_KyHieuDich.ForeColor = Color.BlueViolet;
             lbalNhietDo_KyHieuDich.Location = new Point(796, 0);
             lbalNhietDo_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lbalNhietDo_KyHieuDich.Name = "lbalNhietDo_KyHieuDich";
             lbalNhietDo_KyHieuDich.Padding = new Padding(0, 0, 3, 3);
-            lbalNhietDo_KyHieuDich.Size = new Size(24, 56);
+            lbalNhietDo_KyHieuDich.Size = new Size(24, 55);
             lbalNhietDo_KyHieuDich.TabIndex = 1;
-            lbalNhietDo_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lbalNhietDo_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlNhietDo_Phu
             // 
@@ -910,22 +1003,46 @@
             pnlNhietDo_Phu.BackColor = Color.White;
             pnlNhietDo_Phu.Dock = DockStyle.Fill;
             pnlNhietDo_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlNhietDo_Phu.Location = new Point(1, 436);
+            pnlNhietDo_Phu.Location = new Point(1, 426);
             pnlNhietDo_Phu.Margin = new Padding(1, 2, 1, 2);
             pnlNhietDo_Phu.Name = "pnlNhietDo_Phu";
             pnlNhietDo_Phu.Padding = new Padding(6, 3, 6, 0);
-            pnlNhietDo_Phu.Size = new Size(820, 432);
+            pnlNhietDo_Phu.Size = new Size(820, 420);
             pnlNhietDo_Phu.TabIndex = 2;
             pnlNhietDo_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.ColumnCount = 3;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel12.Controls.Add(ucBanPhim3, 1, 1);
+            tableLayoutPanel12.Dock = DockStyle.Fill;
+            tableLayoutPanel12.Location = new Point(0, 0);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 3;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel12.Size = new Size(819, 848);
+            tableLayoutPanel12.TabIndex = 1;
+            // 
+            // ucBanPhim3
+            // 
+            ucBanPhim3.Location = new Point(166, 172);
+            ucBanPhim3.Name = "ucBanPhim3";
+            ucBanPhim3.Size = new Size(485, 502);
+            ucBanPhim3.TabIndex = 0;
             // 
             // tabPage4
             // 
             tabPage4.Controls.Add(splitContainer6);
-            tabPage4.Location = new Point(4, 41);
+            tabPage4.Location = new Point(4, 63);
             tabPage4.Margin = new Padding(4, 5, 4, 5);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(4, 5, 4, 5);
-            tabPage4.Size = new Size(1652, 880);
+            tabPage4.Size = new Size(1652, 858);
             tabPage4.TabIndex = 4;
             tabPage4.Text = "Thể tích";
             tabPage4.UseVisualStyleBackColor = true;
@@ -943,7 +1060,8 @@
             // splitContainer6.Panel2
             // 
             splitContainer6.Panel2.BackColor = Color.White;
-            splitContainer6.Size = new Size(1644, 870);
+            splitContainer6.Panel2.Controls.Add(tableLayoutPanel17);
+            splitContainer6.Size = new Size(1644, 848);
             splitContainer6.SplitterDistance = 822;
             splitContainer6.SplitterWidth = 3;
             splitContainer6.TabIndex = 0;
@@ -964,7 +1082,7 @@
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Size = new Size(822, 870);
+            tableLayoutPanel4.Size = new Size(822, 848);
             tableLayoutPanel4.TabIndex = 1;
             // 
             // panel4
@@ -974,7 +1092,7 @@
             panel4.Location = new Point(1, 3);
             panel4.Margin = new Padding(1, 3, 1, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(820, 211);
+            panel4.Size = new Size(820, 206);
             panel4.TabIndex = 0;
             // 
             // txtTheTich_Nguon
@@ -994,8 +1112,8 @@
             // 
             txtTheTich_Nguon.Panel2.Controls.Add(txtTheTich_SoNhap);
             txtTheTich_Nguon.Panel2.Controls.Add(lblTheTich_KyHieuNguon);
-            txtTheTich_Nguon.Size = new Size(820, 211);
-            txtTheTich_Nguon.SplitterDistance = 154;
+            txtTheTich_Nguon.Size = new Size(820, 206);
+            txtTheTich_Nguon.SplitterDistance = 150;
             txtTheTich_Nguon.SplitterWidth = 3;
             txtTheTich_Nguon.TabIndex = 1;
             // 
@@ -1004,14 +1122,14 @@
             cboTheTich_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboTheTich_Nguon.Dock = DockStyle.Left;
             cboTheTich_Nguon.FlatStyle = FlatStyle.Flat;
-            cboTheTich_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboTheTich_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboTheTich_Nguon.ForeColor = Color.BlueViolet;
             cboTheTich_Nguon.FormattingEnabled = true;
             cboTheTich_Nguon.Items.AddRange(new object[] { "Gallon Anh (gal)", "Gallon Mỹ (gal)", "Lít (L)", "Mililit (mL)", "Centimet khối (cc) (cm3)", "Mét khối (m3)", "Inch khối (in3)", "Feet khối (ft3)" });
             cboTheTich_Nguon.Location = new Point(0, 0);
             cboTheTich_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboTheTich_Nguon.Name = "cboTheTich_Nguon";
-            cboTheTich_Nguon.Size = new Size(98, 40);
+            cboTheTich_Nguon.Size = new Size(98, 54);
             cboTheTich_Nguon.TabIndex = 1;
             // 
             // txtTheTich_SoNhap
@@ -1019,12 +1137,12 @@
             txtTheTich_SoNhap.BackColor = Color.White;
             txtTheTich_SoNhap.BorderStyle = BorderStyle.None;
             txtTheTich_SoNhap.Dock = DockStyle.Fill;
-            txtTheTich_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTheTich_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtTheTich_SoNhap.ForeColor = Color.BlueViolet;
             txtTheTich_SoNhap.Location = new Point(0, 0);
             txtTheTich_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtTheTich_SoNhap.Name = "txtTheTich_SoNhap";
-            txtTheTich_SoNhap.Size = new Size(786, 55);
+            txtTheTich_SoNhap.Size = new Size(786, 46);
             txtTheTich_SoNhap.TabIndex = 2;
             txtTheTich_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
@@ -1032,20 +1150,20 @@
             // 
             lblTheTich_KyHieuNguon.BackColor = Color.White;
             lblTheTich_KyHieuNguon.Dock = DockStyle.Right;
-            lblTheTich_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblTheTich_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblTheTich_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblTheTich_KyHieuNguon.Location = new Point(786, 0);
             lblTheTich_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblTheTich_KyHieuNguon.Name = "lblTheTich_KyHieuNguon";
             lblTheTich_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblTheTich_KyHieuNguon.Size = new Size(34, 54);
+            lblTheTich_KyHieuNguon.Size = new Size(34, 53);
             lblTheTich_KyHieuNguon.TabIndex = 0;
-            lblTheTich_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblTheTich_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer10
             // 
             splitContainer10.Dock = DockStyle.Fill;
-            splitContainer10.Location = new Point(1, 220);
+            splitContainer10.Location = new Point(1, 215);
             splitContainer10.Margin = new Padding(1, 3, 1, 3);
             splitContainer10.Name = "splitContainer10";
             splitContainer10.Orientation = Orientation.Horizontal;
@@ -1059,8 +1177,8 @@
             // 
             splitContainer10.Panel2.Controls.Add(txtTheTich_KetQua);
             splitContainer10.Panel2.Controls.Add(lblTheTich_KyHieuDich);
-            splitContainer10.Size = new Size(820, 211);
-            splitContainer10.SplitterDistance = 154;
+            splitContainer10.Size = new Size(820, 206);
+            splitContainer10.SplitterDistance = 150;
             splitContainer10.SplitterWidth = 3;
             splitContainer10.TabIndex = 1;
             // 
@@ -1069,14 +1187,14 @@
             cboTheTich_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboTheTich_Dich.Dock = DockStyle.Left;
             cboTheTich_Dich.FlatStyle = FlatStyle.Flat;
-            cboTheTich_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboTheTich_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboTheTich_Dich.ForeColor = Color.BlueViolet;
             cboTheTich_Dich.FormattingEnabled = true;
             cboTheTich_Dich.Items.AddRange(new object[] { "Gallon Anh (gal)", "Gallon Mỹ (gal)", "Lít (L)", "Mililit (mL)", "Centimet khối (cc) (cm3)", "Mét khối (m3)", "Inch khối (in3)", "Feet khối (ft3)" });
             cboTheTich_Dich.Location = new Point(0, 0);
             cboTheTich_Dich.Margin = new Padding(1, 3, 1, 3);
             cboTheTich_Dich.Name = "cboTheTich_Dich";
-            cboTheTich_Dich.Size = new Size(98, 40);
+            cboTheTich_Dich.Size = new Size(98, 54);
             cboTheTich_Dich.TabIndex = 2;
             // 
             // txtTheTich_KetQua
@@ -1084,27 +1202,27 @@
             txtTheTich_KetQua.BackColor = Color.White;
             txtTheTich_KetQua.BorderStyle = BorderStyle.None;
             txtTheTich_KetQua.Dock = DockStyle.Fill;
-            txtTheTich_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTheTich_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtTheTich_KetQua.ForeColor = Color.BlueViolet;
             txtTheTich_KetQua.Location = new Point(0, 0);
             txtTheTich_KetQua.Margin = new Padding(1, 2, 1, 2);
             txtTheTich_KetQua.Name = "txtTheTich_KetQua";
-            txtTheTich_KetQua.Size = new Size(786, 55);
+            txtTheTich_KetQua.Size = new Size(786, 46);
             txtTheTich_KetQua.TabIndex = 2;
             txtTheTich_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lblTheTich_KyHieuDich
             // 
             lblTheTich_KyHieuDich.Dock = DockStyle.Right;
-            lblTheTich_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblTheTich_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblTheTich_KyHieuDich.ForeColor = Color.BlueViolet;
             lblTheTich_KyHieuDich.Location = new Point(786, 0);
             lblTheTich_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblTheTich_KyHieuDich.Name = "lblTheTich_KyHieuDich";
             lblTheTich_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblTheTich_KyHieuDich.Size = new Size(34, 54);
+            lblTheTich_KyHieuDich.Size = new Size(34, 53);
             lblTheTich_KyHieuDich.TabIndex = 1;
-            lblTheTich_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblTheTich_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlTheTich_Phu
             // 
@@ -1112,22 +1230,46 @@
             pnlTheTich_Phu.BackColor = Color.White;
             pnlTheTich_Phu.Dock = DockStyle.Fill;
             pnlTheTich_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlTheTich_Phu.Location = new Point(1, 437);
+            pnlTheTich_Phu.Location = new Point(1, 427);
             pnlTheTich_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlTheTich_Phu.Name = "pnlTheTich_Phu";
             pnlTheTich_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlTheTich_Phu.Size = new Size(820, 430);
+            pnlTheTich_Phu.Size = new Size(820, 418);
             pnlTheTich_Phu.TabIndex = 2;
             pnlTheTich_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel17
+            // 
+            tableLayoutPanel17.ColumnCount = 3;
+            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel17.Controls.Add(ucBanPhim8, 1, 1);
+            tableLayoutPanel17.Dock = DockStyle.Fill;
+            tableLayoutPanel17.Location = new Point(0, 0);
+            tableLayoutPanel17.Name = "tableLayoutPanel17";
+            tableLayoutPanel17.RowCount = 3;
+            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel17.Size = new Size(819, 848);
+            tableLayoutPanel17.TabIndex = 1;
+            // 
+            // ucBanPhim8
+            // 
+            ucBanPhim8.Location = new Point(166, 172);
+            ucBanPhim8.Name = "ucBanPhim8";
+            ucBanPhim8.Size = new Size(485, 502);
+            ucBanPhim8.TabIndex = 0;
             // 
             // tabPage5
             // 
             tabPage5.Controls.Add(splitContainer12);
-            tabPage5.Location = new Point(4, 41);
+            tabPage5.Location = new Point(4, 63);
             tabPage5.Margin = new Padding(4, 3, 4, 3);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(4, 3, 4, 3);
-            tabPage5.Size = new Size(1652, 880);
+            tabPage5.Size = new Size(1652, 858);
             tabPage5.TabIndex = 5;
             tabPage5.Text = "Khối Lượng";
             tabPage5.UseVisualStyleBackColor = true;
@@ -1141,7 +1283,11 @@
             // splitContainer12.Panel1
             // 
             splitContainer12.Panel1.Controls.Add(tableLayoutPanel6);
-            splitContainer12.Size = new Size(1644, 874);
+            // 
+            // splitContainer12.Panel2
+            // 
+            splitContainer12.Panel2.Controls.Add(tableLayoutPanel16);
+            splitContainer12.Size = new Size(1644, 852);
             splitContainer12.SplitterDistance = 822;
             splitContainer12.SplitterWidth = 3;
             splitContainer12.TabIndex = 0;
@@ -1162,7 +1308,7 @@
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(822, 874);
+            tableLayoutPanel6.Size = new Size(822, 852);
             tableLayoutPanel6.TabIndex = 1;
             // 
             // panel6
@@ -1172,7 +1318,7 @@
             panel6.Location = new Point(1, 3);
             panel6.Margin = new Padding(1, 3, 1, 3);
             panel6.Name = "panel6";
-            panel6.Size = new Size(820, 212);
+            panel6.Size = new Size(820, 207);
             panel6.TabIndex = 0;
             // 
             // splitContainer16
@@ -1191,8 +1337,8 @@
             // 
             splitContainer16.Panel2.Controls.Add(txtKhoiLuong_SoNhap);
             splitContainer16.Panel2.Controls.Add(lblKhoiLuong_KyHieuNguon);
-            splitContainer16.Size = new Size(820, 212);
-            splitContainer16.SplitterDistance = 156;
+            splitContainer16.Size = new Size(820, 207);
+            splitContainer16.SplitterDistance = 152;
             splitContainer16.SplitterWidth = 3;
             splitContainer16.TabIndex = 1;
             // 
@@ -1201,14 +1347,14 @@
             cboKhoiLuong_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboKhoiLuong_Nguon.Dock = DockStyle.Left;
             cboKhoiLuong_Nguon.FlatStyle = FlatStyle.Flat;
-            cboKhoiLuong_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboKhoiLuong_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboKhoiLuong_Nguon.ForeColor = Color.BlueViolet;
             cboKhoiLuong_Nguon.FormattingEnabled = true;
             cboKhoiLuong_Nguon.Items.AddRange(new object[] { "Tấn (t)", "Tấn Anh (t)", "Tấn Mỹ (t)", "Pound (lb)", "Ounce (oz)", "Kilogram (kg)", "Gram (g)" });
             cboKhoiLuong_Nguon.Location = new Point(0, 0);
             cboKhoiLuong_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboKhoiLuong_Nguon.Name = "cboKhoiLuong_Nguon";
-            cboKhoiLuong_Nguon.Size = new Size(98, 40);
+            cboKhoiLuong_Nguon.Size = new Size(98, 54);
             cboKhoiLuong_Nguon.TabIndex = 1;
             // 
             // txtKhoiLuong_SoNhap
@@ -1216,32 +1362,32 @@
             txtKhoiLuong_SoNhap.BackColor = Color.White;
             txtKhoiLuong_SoNhap.BorderStyle = BorderStyle.None;
             txtKhoiLuong_SoNhap.Dock = DockStyle.Fill;
-            txtKhoiLuong_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtKhoiLuong_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtKhoiLuong_SoNhap.ForeColor = Color.BlueViolet;
             txtKhoiLuong_SoNhap.Location = new Point(0, 0);
             txtKhoiLuong_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtKhoiLuong_SoNhap.Name = "txtKhoiLuong_SoNhap";
-            txtKhoiLuong_SoNhap.Size = new Size(786, 55);
+            txtKhoiLuong_SoNhap.Size = new Size(786, 46);
             txtKhoiLuong_SoNhap.TabIndex = 1;
             txtKhoiLuong_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lblKhoiLuong_KyHieuNguon
             // 
             lblKhoiLuong_KyHieuNguon.Dock = DockStyle.Right;
-            lblKhoiLuong_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblKhoiLuong_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblKhoiLuong_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblKhoiLuong_KyHieuNguon.Location = new Point(786, 0);
             lblKhoiLuong_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblKhoiLuong_KyHieuNguon.Name = "lblKhoiLuong_KyHieuNguon";
             lblKhoiLuong_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblKhoiLuong_KyHieuNguon.Size = new Size(34, 53);
+            lblKhoiLuong_KyHieuNguon.Size = new Size(34, 52);
             lblKhoiLuong_KyHieuNguon.TabIndex = 0;
-            lblKhoiLuong_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblKhoiLuong_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer17
             // 
             splitContainer17.Dock = DockStyle.Fill;
-            splitContainer17.Location = new Point(1, 221);
+            splitContainer17.Location = new Point(1, 216);
             splitContainer17.Margin = new Padding(1, 3, 1, 3);
             splitContainer17.Name = "splitContainer17";
             splitContainer17.Orientation = Orientation.Horizontal;
@@ -1254,8 +1400,8 @@
             // 
             splitContainer17.Panel2.Controls.Add(txtKhoiLuong_KetQua);
             splitContainer17.Panel2.Controls.Add(lblKhoiLuong_KyHieuDich);
-            splitContainer17.Size = new Size(820, 212);
-            splitContainer17.SplitterDistance = 156;
+            splitContainer17.Size = new Size(820, 207);
+            splitContainer17.SplitterDistance = 152;
             splitContainer17.SplitterWidth = 3;
             splitContainer17.TabIndex = 1;
             // 
@@ -1264,14 +1410,14 @@
             cboKhoiLuong_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboKhoiLuong_Dich.Dock = DockStyle.Left;
             cboKhoiLuong_Dich.FlatStyle = FlatStyle.Flat;
-            cboKhoiLuong_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboKhoiLuong_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboKhoiLuong_Dich.ForeColor = Color.BlueViolet;
             cboKhoiLuong_Dich.FormattingEnabled = true;
             cboKhoiLuong_Dich.Items.AddRange(new object[] { "Tấn (t)", "Tấn Anh (t)", "Tấn Mỹ (t)", "Pound (lb)", "Ounce (oz)", "Kilogram (kg)", "Gram (g)" });
             cboKhoiLuong_Dich.Location = new Point(0, 0);
             cboKhoiLuong_Dich.Margin = new Padding(1, 3, 1, 3);
             cboKhoiLuong_Dich.Name = "cboKhoiLuong_Dich";
-            cboKhoiLuong_Dich.Size = new Size(98, 40);
+            cboKhoiLuong_Dich.Size = new Size(98, 54);
             cboKhoiLuong_Dich.TabIndex = 2;
             // 
             // txtKhoiLuong_KetQua
@@ -1279,49 +1425,73 @@
             txtKhoiLuong_KetQua.BackColor = Color.White;
             txtKhoiLuong_KetQua.BorderStyle = BorderStyle.None;
             txtKhoiLuong_KetQua.Dock = DockStyle.Fill;
-            txtKhoiLuong_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtKhoiLuong_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtKhoiLuong_KetQua.ForeColor = Color.BlueViolet;
             txtKhoiLuong_KetQua.Location = new Point(0, 0);
             txtKhoiLuong_KetQua.Margin = new Padding(1, 3, 1, 3);
             txtKhoiLuong_KetQua.Name = "txtKhoiLuong_KetQua";
-            txtKhoiLuong_KetQua.Size = new Size(786, 55);
+            txtKhoiLuong_KetQua.Size = new Size(786, 46);
             txtKhoiLuong_KetQua.TabIndex = 2;
             txtKhoiLuong_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lblKhoiLuong_KyHieuDich
             // 
             lblKhoiLuong_KyHieuDich.Dock = DockStyle.Right;
-            lblKhoiLuong_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblKhoiLuong_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblKhoiLuong_KyHieuDich.ForeColor = Color.BlueViolet;
             lblKhoiLuong_KyHieuDich.Location = new Point(786, 0);
             lblKhoiLuong_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblKhoiLuong_KyHieuDich.Name = "lblKhoiLuong_KyHieuDich";
             lblKhoiLuong_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblKhoiLuong_KyHieuDich.Size = new Size(34, 53);
+            lblKhoiLuong_KyHieuDich.Size = new Size(34, 52);
             lblKhoiLuong_KyHieuDich.TabIndex = 1;
-            lblKhoiLuong_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblKhoiLuong_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlKhoiLuong_Phu
             // 
             pnlKhoiLuong_Phu.AutoScroll = true;
             pnlKhoiLuong_Phu.Dock = DockStyle.Fill;
             pnlKhoiLuong_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlKhoiLuong_Phu.Location = new Point(1, 439);
+            pnlKhoiLuong_Phu.Location = new Point(1, 429);
             pnlKhoiLuong_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlKhoiLuong_Phu.Name = "pnlKhoiLuong_Phu";
             pnlKhoiLuong_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlKhoiLuong_Phu.Size = new Size(820, 432);
+            pnlKhoiLuong_Phu.Size = new Size(820, 420);
             pnlKhoiLuong_Phu.TabIndex = 2;
             pnlKhoiLuong_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel16
+            // 
+            tableLayoutPanel16.ColumnCount = 3;
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel16.Controls.Add(ucBanPhim7, 1, 1);
+            tableLayoutPanel16.Dock = DockStyle.Fill;
+            tableLayoutPanel16.Location = new Point(0, 0);
+            tableLayoutPanel16.Name = "tableLayoutPanel16";
+            tableLayoutPanel16.RowCount = 3;
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel16.Size = new Size(819, 852);
+            tableLayoutPanel16.TabIndex = 1;
+            // 
+            // ucBanPhim7
+            // 
+            ucBanPhim7.Location = new Point(166, 173);
+            ucBanPhim7.Name = "ucBanPhim7";
+            ucBanPhim7.Size = new Size(485, 505);
+            ucBanPhim7.TabIndex = 0;
             // 
             // tabPage6
             // 
             tabPage6.Controls.Add(splitContainer13);
-            tabPage6.Location = new Point(4, 41);
+            tabPage6.Location = new Point(4, 63);
             tabPage6.Margin = new Padding(4, 3, 4, 3);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(4, 3, 4, 3);
-            tabPage6.Size = new Size(1652, 880);
+            tabPage6.Size = new Size(1652, 858);
             tabPage6.TabIndex = 6;
             tabPage6.Text = "Dữ liệu";
             tabPage6.UseVisualStyleBackColor = true;
@@ -1335,7 +1505,11 @@
             // splitContainer13.Panel1
             // 
             splitContainer13.Panel1.Controls.Add(tableLayoutPanel7);
-            splitContainer13.Size = new Size(1644, 874);
+            // 
+            // splitContainer13.Panel2
+            // 
+            splitContainer13.Panel2.Controls.Add(tableLayoutPanel15);
+            splitContainer13.Size = new Size(1644, 852);
             splitContainer13.SplitterDistance = 822;
             splitContainer13.SplitterWidth = 3;
             splitContainer13.TabIndex = 0;
@@ -1356,7 +1530,7 @@
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(822, 874);
+            tableLayoutPanel7.Size = new Size(822, 852);
             tableLayoutPanel7.TabIndex = 1;
             // 
             // panel7
@@ -1366,7 +1540,7 @@
             panel7.Location = new Point(1, 3);
             panel7.Margin = new Padding(1, 3, 1, 3);
             panel7.Name = "panel7";
-            panel7.Size = new Size(820, 212);
+            panel7.Size = new Size(820, 207);
             panel7.TabIndex = 0;
             // 
             // splitContainer18
@@ -1385,8 +1559,8 @@
             // 
             splitContainer18.Panel2.Controls.Add(txtDuLieu_SoNhap);
             splitContainer18.Panel2.Controls.Add(lblDuLieu_KyHieuNguon);
-            splitContainer18.Size = new Size(820, 212);
-            splitContainer18.SplitterDistance = 156;
+            splitContainer18.Size = new Size(820, 207);
+            splitContainer18.SplitterDistance = 152;
             splitContainer18.SplitterWidth = 3;
             splitContainer18.TabIndex = 1;
             // 
@@ -1395,14 +1569,14 @@
             cboDuLieu_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDuLieu_Nguon.Dock = DockStyle.Left;
             cboDuLieu_Nguon.FlatStyle = FlatStyle.Flat;
-            cboDuLieu_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDuLieu_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDuLieu_Nguon.ForeColor = Color.BlueViolet;
             cboDuLieu_Nguon.FormattingEnabled = true;
             cboDuLieu_Nguon.Items.AddRange(new object[] { "Bit (bit)", "Byte (B)", "Kilobyte (KB)", "Kibibyte (KiB)", "Megabyte (MB)", "Mebibyte (MiB)", "Gigabyte (GB)", "Gibibyte (GiB)", "Terabyte (TB)", "Tebibyte (TiB)" });
             cboDuLieu_Nguon.Location = new Point(0, 0);
             cboDuLieu_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboDuLieu_Nguon.Name = "cboDuLieu_Nguon";
-            cboDuLieu_Nguon.Size = new Size(98, 40);
+            cboDuLieu_Nguon.Size = new Size(98, 54);
             cboDuLieu_Nguon.TabIndex = 1;
             // 
             // txtDuLieu_SoNhap
@@ -1410,32 +1584,32 @@
             txtDuLieu_SoNhap.BackColor = Color.White;
             txtDuLieu_SoNhap.BorderStyle = BorderStyle.None;
             txtDuLieu_SoNhap.Dock = DockStyle.Fill;
-            txtDuLieu_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDuLieu_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDuLieu_SoNhap.ForeColor = Color.BlueViolet;
             txtDuLieu_SoNhap.Location = new Point(0, 0);
             txtDuLieu_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtDuLieu_SoNhap.Name = "txtDuLieu_SoNhap";
-            txtDuLieu_SoNhap.Size = new Size(786, 55);
+            txtDuLieu_SoNhap.Size = new Size(786, 46);
             txtDuLieu_SoNhap.TabIndex = 1;
             txtDuLieu_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lblDuLieu_KyHieuNguon
             // 
             lblDuLieu_KyHieuNguon.Dock = DockStyle.Right;
-            lblDuLieu_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDuLieu_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDuLieu_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblDuLieu_KyHieuNguon.Location = new Point(786, 0);
             lblDuLieu_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblDuLieu_KyHieuNguon.Name = "lblDuLieu_KyHieuNguon";
             lblDuLieu_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblDuLieu_KyHieuNguon.Size = new Size(34, 53);
+            lblDuLieu_KyHieuNguon.Size = new Size(34, 52);
             lblDuLieu_KyHieuNguon.TabIndex = 0;
-            lblDuLieu_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblDuLieu_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer19
             // 
             splitContainer19.Dock = DockStyle.Fill;
-            splitContainer19.Location = new Point(1, 221);
+            splitContainer19.Location = new Point(1, 216);
             splitContainer19.Margin = new Padding(1, 3, 1, 3);
             splitContainer19.Name = "splitContainer19";
             splitContainer19.Orientation = Orientation.Horizontal;
@@ -1448,8 +1622,8 @@
             // 
             splitContainer19.Panel2.Controls.Add(txtDuLieu_KetQua);
             splitContainer19.Panel2.Controls.Add(lblDuLieu_KyHieuDich);
-            splitContainer19.Size = new Size(820, 212);
-            splitContainer19.SplitterDistance = 156;
+            splitContainer19.Size = new Size(820, 207);
+            splitContainer19.SplitterDistance = 152;
             splitContainer19.SplitterWidth = 3;
             splitContainer19.TabIndex = 1;
             // 
@@ -1458,14 +1632,14 @@
             cboDuLieu_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboDuLieu_Dich.Dock = DockStyle.Left;
             cboDuLieu_Dich.FlatStyle = FlatStyle.Flat;
-            cboDuLieu_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboDuLieu_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboDuLieu_Dich.ForeColor = Color.BlueViolet;
             cboDuLieu_Dich.FormattingEnabled = true;
             cboDuLieu_Dich.Items.AddRange(new object[] { "Bit (bit)", "Byte (B)", "Kilobyte (KB)", "Kibibyte (KiB)", "Megabyte (MB)", "Mebibyte (MiB)", "Gigabyte (GB)", "Gibibyte (GiB)", "Terabyte (TB)", "Tebibyte (TiB)" });
             cboDuLieu_Dich.Location = new Point(0, 0);
             cboDuLieu_Dich.Margin = new Padding(1, 3, 1, 3);
             cboDuLieu_Dich.Name = "cboDuLieu_Dich";
-            cboDuLieu_Dich.Size = new Size(98, 40);
+            cboDuLieu_Dich.Size = new Size(98, 54);
             cboDuLieu_Dich.TabIndex = 2;
             // 
             // txtDuLieu_KetQua
@@ -1473,49 +1647,73 @@
             txtDuLieu_KetQua.BackColor = Color.White;
             txtDuLieu_KetQua.BorderStyle = BorderStyle.None;
             txtDuLieu_KetQua.Dock = DockStyle.Fill;
-            txtDuLieu_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtDuLieu_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtDuLieu_KetQua.ForeColor = Color.BlueViolet;
             txtDuLieu_KetQua.Location = new Point(0, 0);
             txtDuLieu_KetQua.Margin = new Padding(1, 3, 1, 3);
             txtDuLieu_KetQua.Name = "txtDuLieu_KetQua";
-            txtDuLieu_KetQua.Size = new Size(786, 55);
+            txtDuLieu_KetQua.Size = new Size(786, 46);
             txtDuLieu_KetQua.TabIndex = 2;
             txtDuLieu_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lblDuLieu_KyHieuDich
             // 
             lblDuLieu_KyHieuDich.Dock = DockStyle.Right;
-            lblDuLieu_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblDuLieu_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblDuLieu_KyHieuDich.ForeColor = Color.BlueViolet;
             lblDuLieu_KyHieuDich.Location = new Point(786, 0);
             lblDuLieu_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblDuLieu_KyHieuDich.Name = "lblDuLieu_KyHieuDich";
             lblDuLieu_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblDuLieu_KyHieuDich.Size = new Size(34, 53);
+            lblDuLieu_KyHieuDich.Size = new Size(34, 52);
             lblDuLieu_KyHieuDich.TabIndex = 1;
-            lblDuLieu_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblDuLieu_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlDuLieu_Phu
             // 
             pnlDuLieu_Phu.AutoScroll = true;
             pnlDuLieu_Phu.Dock = DockStyle.Fill;
             pnlDuLieu_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlDuLieu_Phu.Location = new Point(1, 439);
+            pnlDuLieu_Phu.Location = new Point(1, 429);
             pnlDuLieu_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlDuLieu_Phu.Name = "pnlDuLieu_Phu";
             pnlDuLieu_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlDuLieu_Phu.Size = new Size(820, 432);
+            pnlDuLieu_Phu.Size = new Size(820, 420);
             pnlDuLieu_Phu.TabIndex = 2;
             pnlDuLieu_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel15
+            // 
+            tableLayoutPanel15.ColumnCount = 3;
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel15.Controls.Add(ucBanPhim6, 1, 1);
+            tableLayoutPanel15.Dock = DockStyle.Fill;
+            tableLayoutPanel15.Location = new Point(0, 0);
+            tableLayoutPanel15.Name = "tableLayoutPanel15";
+            tableLayoutPanel15.RowCount = 3;
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel15.Size = new Size(819, 852);
+            tableLayoutPanel15.TabIndex = 1;
+            // 
+            // ucBanPhim6
+            // 
+            ucBanPhim6.Location = new Point(166, 173);
+            ucBanPhim6.Name = "ucBanPhim6";
+            ucBanPhim6.Size = new Size(485, 505);
+            ucBanPhim6.TabIndex = 0;
             // 
             // tabPage7
             // 
             tabPage7.Controls.Add(splitContainer14);
-            tabPage7.Location = new Point(4, 41);
+            tabPage7.Location = new Point(4, 63);
             tabPage7.Margin = new Padding(4, 3, 4, 3);
             tabPage7.Name = "tabPage7";
             tabPage7.Padding = new Padding(4, 3, 4, 3);
-            tabPage7.Size = new Size(1652, 880);
+            tabPage7.Size = new Size(1652, 858);
             tabPage7.TabIndex = 7;
             tabPage7.Text = "Tốc độ";
             tabPage7.UseVisualStyleBackColor = true;
@@ -1529,7 +1727,11 @@
             // splitContainer14.Panel1
             // 
             splitContainer14.Panel1.Controls.Add(tableLayoutPanel8);
-            splitContainer14.Size = new Size(1644, 874);
+            // 
+            // splitContainer14.Panel2
+            // 
+            splitContainer14.Panel2.Controls.Add(tableLayoutPanel14);
+            splitContainer14.Size = new Size(1644, 852);
             splitContainer14.SplitterDistance = 822;
             splitContainer14.SplitterWidth = 3;
             splitContainer14.TabIndex = 0;
@@ -1550,7 +1752,7 @@
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.Size = new Size(822, 874);
+            tableLayoutPanel8.Size = new Size(822, 852);
             tableLayoutPanel8.TabIndex = 1;
             // 
             // panel8
@@ -1560,7 +1762,7 @@
             panel8.Location = new Point(1, 3);
             panel8.Margin = new Padding(1, 3, 1, 3);
             panel8.Name = "panel8";
-            panel8.Size = new Size(820, 212);
+            panel8.Size = new Size(820, 207);
             panel8.TabIndex = 0;
             // 
             // splitContainer20
@@ -1579,8 +1781,8 @@
             // 
             splitContainer20.Panel2.Controls.Add(txtTocDo_SoNhap);
             splitContainer20.Panel2.Controls.Add(lblTocDo_KyHieuNguon);
-            splitContainer20.Size = new Size(820, 212);
-            splitContainer20.SplitterDistance = 156;
+            splitContainer20.Size = new Size(820, 207);
+            splitContainer20.SplitterDistance = 152;
             splitContainer20.SplitterWidth = 3;
             splitContainer20.TabIndex = 1;
             // 
@@ -1589,14 +1791,14 @@
             cboTocDo_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboTocDo_Nguon.Dock = DockStyle.Left;
             cboTocDo_Nguon.FlatStyle = FlatStyle.Flat;
-            cboTocDo_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboTocDo_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboTocDo_Nguon.ForeColor = Color.BlueViolet;
             cboTocDo_Nguon.FormattingEnabled = true;
             cboTocDo_Nguon.Items.AddRange(new object[] { "Mét trên giây (m/s)", "Mét trên giờ (m/h)", "Kilomet trên giây (km/s)", "Kilomet trên giờ (km/h)", "Inch trên giây (in/s)", "Inch trên giờ (in/h)", "Feet trên giây (ft/s)", "Feet trên giờ (ft/h)", "Dặm trên giây (mi/s)", "Dặm trên giờ (mi/h)", "Hải lý trên giờ (kn)" });
             cboTocDo_Nguon.Location = new Point(0, 0);
             cboTocDo_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboTocDo_Nguon.Name = "cboTocDo_Nguon";
-            cboTocDo_Nguon.Size = new Size(98, 40);
+            cboTocDo_Nguon.Size = new Size(98, 54);
             cboTocDo_Nguon.TabIndex = 1;
             // 
             // txtTocDo_SoNhap
@@ -1604,32 +1806,32 @@
             txtTocDo_SoNhap.BackColor = Color.White;
             txtTocDo_SoNhap.BorderStyle = BorderStyle.None;
             txtTocDo_SoNhap.Dock = DockStyle.Fill;
-            txtTocDo_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTocDo_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtTocDo_SoNhap.ForeColor = Color.BlueViolet;
             txtTocDo_SoNhap.Location = new Point(0, 0);
             txtTocDo_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtTocDo_SoNhap.Name = "txtTocDo_SoNhap";
-            txtTocDo_SoNhap.Size = new Size(786, 55);
+            txtTocDo_SoNhap.Size = new Size(786, 46);
             txtTocDo_SoNhap.TabIndex = 1;
             txtTocDo_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lblTocDo_KyHieuNguon
             // 
             lblTocDo_KyHieuNguon.Dock = DockStyle.Right;
-            lblTocDo_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblTocDo_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblTocDo_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblTocDo_KyHieuNguon.Location = new Point(786, 0);
             lblTocDo_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblTocDo_KyHieuNguon.Name = "lblTocDo_KyHieuNguon";
             lblTocDo_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblTocDo_KyHieuNguon.Size = new Size(34, 53);
+            lblTocDo_KyHieuNguon.Size = new Size(34, 52);
             lblTocDo_KyHieuNguon.TabIndex = 0;
-            lblTocDo_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblTocDo_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer21
             // 
             splitContainer21.Dock = DockStyle.Fill;
-            splitContainer21.Location = new Point(1, 221);
+            splitContainer21.Location = new Point(1, 216);
             splitContainer21.Margin = new Padding(1, 3, 1, 3);
             splitContainer21.Name = "splitContainer21";
             splitContainer21.Orientation = Orientation.Horizontal;
@@ -1642,8 +1844,8 @@
             // 
             splitContainer21.Panel2.Controls.Add(txtTocDo_KetQua);
             splitContainer21.Panel2.Controls.Add(lblTocDo_KyHieuDich);
-            splitContainer21.Size = new Size(820, 212);
-            splitContainer21.SplitterDistance = 156;
+            splitContainer21.Size = new Size(820, 207);
+            splitContainer21.SplitterDistance = 152;
             splitContainer21.SplitterWidth = 3;
             splitContainer21.TabIndex = 1;
             // 
@@ -1652,14 +1854,14 @@
             cboTocDo_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboTocDo_Dich.Dock = DockStyle.Left;
             cboTocDo_Dich.FlatStyle = FlatStyle.Flat;
-            cboTocDo_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboTocDo_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboTocDo_Dich.ForeColor = Color.BlueViolet;
             cboTocDo_Dich.FormattingEnabled = true;
             cboTocDo_Dich.Items.AddRange(new object[] { "Mét trên giây (m/s)", "Mét trên giờ (m/h)", "Kilomet trên giây (km/s)", "Kilomet trên giờ (km/h)", "Inch trên giây (in/s)", "Inch trên giờ (in/h)", "Feet trên giây (ft/s)", "Feet trên giờ (ft/h)", "Dặm trên giây (mi/s)", "Dặm trên giờ (mi/h)", "Hải lý trên giờ (kn)" });
             cboTocDo_Dich.Location = new Point(0, 0);
             cboTocDo_Dich.Margin = new Padding(1, 3, 1, 3);
             cboTocDo_Dich.Name = "cboTocDo_Dich";
-            cboTocDo_Dich.Size = new Size(98, 40);
+            cboTocDo_Dich.Size = new Size(98, 54);
             cboTocDo_Dich.TabIndex = 2;
             // 
             // txtTocDo_KetQua
@@ -1667,49 +1869,73 @@
             txtTocDo_KetQua.BackColor = Color.White;
             txtTocDo_KetQua.BorderStyle = BorderStyle.None;
             txtTocDo_KetQua.Dock = DockStyle.Fill;
-            txtTocDo_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTocDo_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtTocDo_KetQua.ForeColor = Color.BlueViolet;
             txtTocDo_KetQua.Location = new Point(0, 0);
             txtTocDo_KetQua.Margin = new Padding(1, 3, 1, 3);
             txtTocDo_KetQua.Name = "txtTocDo_KetQua";
-            txtTocDo_KetQua.Size = new Size(786, 55);
+            txtTocDo_KetQua.Size = new Size(786, 46);
             txtTocDo_KetQua.TabIndex = 2;
             txtTocDo_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lblTocDo_KyHieuDich
             // 
             lblTocDo_KyHieuDich.Dock = DockStyle.Right;
-            lblTocDo_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblTocDo_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblTocDo_KyHieuDich.ForeColor = Color.BlueViolet;
             lblTocDo_KyHieuDich.Location = new Point(786, 0);
             lblTocDo_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblTocDo_KyHieuDich.Name = "lblTocDo_KyHieuDich";
             lblTocDo_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblTocDo_KyHieuDich.Size = new Size(34, 53);
+            lblTocDo_KyHieuDich.Size = new Size(34, 52);
             lblTocDo_KyHieuDich.TabIndex = 1;
-            lblTocDo_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblTocDo_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlTocDo_Phu
             // 
             pnlTocDo_Phu.AutoScroll = true;
             pnlTocDo_Phu.Dock = DockStyle.Fill;
             pnlTocDo_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlTocDo_Phu.Location = new Point(1, 439);
+            pnlTocDo_Phu.Location = new Point(1, 429);
             pnlTocDo_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlTocDo_Phu.Name = "pnlTocDo_Phu";
             pnlTocDo_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlTocDo_Phu.Size = new Size(820, 432);
+            pnlTocDo_Phu.Size = new Size(820, 420);
             pnlTocDo_Phu.TabIndex = 2;
             pnlTocDo_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel14
+            // 
+            tableLayoutPanel14.ColumnCount = 3;
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel14.Controls.Add(ucBanPhim5, 1, 1);
+            tableLayoutPanel14.Dock = DockStyle.Fill;
+            tableLayoutPanel14.Location = new Point(0, 0);
+            tableLayoutPanel14.Name = "tableLayoutPanel14";
+            tableLayoutPanel14.RowCount = 3;
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel14.Size = new Size(819, 852);
+            tableLayoutPanel14.TabIndex = 1;
+            // 
+            // ucBanPhim5
+            // 
+            ucBanPhim5.Location = new Point(166, 173);
+            ucBanPhim5.Name = "ucBanPhim5";
+            ucBanPhim5.Size = new Size(485, 505);
+            ucBanPhim5.TabIndex = 0;
             // 
             // tabPage8
             // 
             tabPage8.Controls.Add(splitContainer15);
-            tabPage8.Location = new Point(4, 41);
+            tabPage8.Location = new Point(4, 63);
             tabPage8.Margin = new Padding(4, 3, 4, 3);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(4, 3, 4, 3);
-            tabPage8.Size = new Size(1652, 880);
+            tabPage8.Size = new Size(1652, 858);
             tabPage8.TabIndex = 8;
             tabPage8.Text = "Thời gian";
             tabPage8.UseVisualStyleBackColor = true;
@@ -1723,7 +1949,11 @@
             // splitContainer15.Panel1
             // 
             splitContainer15.Panel1.Controls.Add(tableLayoutPanel9);
-            splitContainer15.Size = new Size(1644, 874);
+            // 
+            // splitContainer15.Panel2
+            // 
+            splitContainer15.Panel2.Controls.Add(tableLayoutPanel13);
+            splitContainer15.Size = new Size(1644, 852);
             splitContainer15.SplitterDistance = 822;
             splitContainer15.SplitterWidth = 3;
             splitContainer15.TabIndex = 0;
@@ -1744,7 +1974,7 @@
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.Size = new Size(822, 874);
+            tableLayoutPanel9.Size = new Size(822, 852);
             tableLayoutPanel9.TabIndex = 1;
             // 
             // panel9
@@ -1754,7 +1984,7 @@
             panel9.Location = new Point(1, 3);
             panel9.Margin = new Padding(1, 3, 1, 3);
             panel9.Name = "panel9";
-            panel9.Size = new Size(820, 212);
+            panel9.Size = new Size(820, 207);
             panel9.TabIndex = 0;
             // 
             // splitContainer22
@@ -1773,8 +2003,8 @@
             // 
             splitContainer22.Panel2.Controls.Add(txtThoiGian_SoNhap);
             splitContainer22.Panel2.Controls.Add(lblThoiGian_KyHieuNguon);
-            splitContainer22.Size = new Size(820, 212);
-            splitContainer22.SplitterDistance = 156;
+            splitContainer22.Size = new Size(820, 207);
+            splitContainer22.SplitterDistance = 152;
             splitContainer22.SplitterWidth = 3;
             splitContainer22.TabIndex = 1;
             // 
@@ -1783,14 +2013,14 @@
             cboThoiGian_Nguon.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboThoiGian_Nguon.Dock = DockStyle.Left;
             cboThoiGian_Nguon.FlatStyle = FlatStyle.Flat;
-            cboThoiGian_Nguon.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboThoiGian_Nguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboThoiGian_Nguon.ForeColor = Color.BlueViolet;
             cboThoiGian_Nguon.FormattingEnabled = true;
             cboThoiGian_Nguon.Items.AddRange(new object[] { "Mili giây (ms)", "Giây (s)", "Phút (min)", "Giờ (h)", "Ngày (d)", "Tuần (wk)" });
             cboThoiGian_Nguon.Location = new Point(0, 0);
             cboThoiGian_Nguon.Margin = new Padding(1, 3, 1, 3);
             cboThoiGian_Nguon.Name = "cboThoiGian_Nguon";
-            cboThoiGian_Nguon.Size = new Size(98, 40);
+            cboThoiGian_Nguon.Size = new Size(98, 54);
             cboThoiGian_Nguon.TabIndex = 1;
             // 
             // txtThoiGian_SoNhap
@@ -1798,32 +2028,32 @@
             txtThoiGian_SoNhap.BackColor = Color.White;
             txtThoiGian_SoNhap.BorderStyle = BorderStyle.None;
             txtThoiGian_SoNhap.Dock = DockStyle.Fill;
-            txtThoiGian_SoNhap.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtThoiGian_SoNhap.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtThoiGian_SoNhap.ForeColor = Color.BlueViolet;
             txtThoiGian_SoNhap.Location = new Point(0, 0);
             txtThoiGian_SoNhap.Margin = new Padding(1, 3, 1, 3);
             txtThoiGian_SoNhap.Name = "txtThoiGian_SoNhap";
-            txtThoiGian_SoNhap.Size = new Size(786, 55);
+            txtThoiGian_SoNhap.Size = new Size(786, 46);
             txtThoiGian_SoNhap.TabIndex = 1;
             txtThoiGian_SoNhap.TextAlign = HorizontalAlignment.Right;
             // 
             // lblThoiGian_KyHieuNguon
             // 
             lblThoiGian_KyHieuNguon.Dock = DockStyle.Right;
-            lblThoiGian_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblThoiGian_KyHieuNguon.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblThoiGian_KyHieuNguon.ForeColor = Color.BlueViolet;
             lblThoiGian_KyHieuNguon.Location = new Point(786, 0);
             lblThoiGian_KyHieuNguon.Margin = new Padding(1, 0, 1, 0);
             lblThoiGian_KyHieuNguon.Name = "lblThoiGian_KyHieuNguon";
             lblThoiGian_KyHieuNguon.Padding = new Padding(0, 0, 4, 3);
-            lblThoiGian_KyHieuNguon.Size = new Size(34, 53);
+            lblThoiGian_KyHieuNguon.Size = new Size(34, 52);
             lblThoiGian_KyHieuNguon.TabIndex = 0;
-            lblThoiGian_KyHieuNguon.TextAlign = ContentAlignment.BottomCenter;
+            lblThoiGian_KyHieuNguon.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // splitContainer23
             // 
             splitContainer23.Dock = DockStyle.Fill;
-            splitContainer23.Location = new Point(1, 221);
+            splitContainer23.Location = new Point(1, 216);
             splitContainer23.Margin = new Padding(1, 3, 1, 3);
             splitContainer23.Name = "splitContainer23";
             splitContainer23.Orientation = Orientation.Horizontal;
@@ -1836,8 +2066,8 @@
             // 
             splitContainer23.Panel2.Controls.Add(txtThoiGian_KetQua);
             splitContainer23.Panel2.Controls.Add(lblThoiGian_KyHieuDich);
-            splitContainer23.Size = new Size(820, 212);
-            splitContainer23.SplitterDistance = 156;
+            splitContainer23.Size = new Size(820, 207);
+            splitContainer23.SplitterDistance = 152;
             splitContainer23.SplitterWidth = 3;
             splitContainer23.TabIndex = 1;
             // 
@@ -1846,14 +2076,14 @@
             cboThoiGian_Dich.AutoCompleteMode = AutoCompleteMode.Suggest;
             cboThoiGian_Dich.Dock = DockStyle.Left;
             cboThoiGian_Dich.FlatStyle = FlatStyle.Flat;
-            cboThoiGian_Dich.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cboThoiGian_Dich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             cboThoiGian_Dich.ForeColor = Color.BlueViolet;
             cboThoiGian_Dich.FormattingEnabled = true;
             cboThoiGian_Dich.Items.AddRange(new object[] { "Mili giây (ms)", "Giây (s)", "Phút (min)", "Giờ (h)", "Ngày (d)", "Tuần (wk)" });
             cboThoiGian_Dich.Location = new Point(0, 0);
             cboThoiGian_Dich.Margin = new Padding(1, 3, 1, 3);
             cboThoiGian_Dich.Name = "cboThoiGian_Dich";
-            cboThoiGian_Dich.Size = new Size(98, 40);
+            cboThoiGian_Dich.Size = new Size(98, 54);
             cboThoiGian_Dich.TabIndex = 2;
             // 
             // txtThoiGian_KetQua
@@ -1861,40 +2091,64 @@
             txtThoiGian_KetQua.BackColor = Color.White;
             txtThoiGian_KetQua.BorderStyle = BorderStyle.None;
             txtThoiGian_KetQua.Dock = DockStyle.Fill;
-            txtThoiGian_KetQua.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtThoiGian_KetQua.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             txtThoiGian_KetQua.ForeColor = Color.BlueViolet;
             txtThoiGian_KetQua.Location = new Point(0, 0);
             txtThoiGian_KetQua.Margin = new Padding(1, 3, 1, 3);
             txtThoiGian_KetQua.Name = "txtThoiGian_KetQua";
-            txtThoiGian_KetQua.Size = new Size(786, 55);
+            txtThoiGian_KetQua.Size = new Size(786, 46);
             txtThoiGian_KetQua.TabIndex = 2;
             txtThoiGian_KetQua.TextAlign = HorizontalAlignment.Right;
             // 
             // lblThoiGian_KyHieuDich
             // 
             lblThoiGian_KyHieuDich.Dock = DockStyle.Right;
-            lblThoiGian_KyHieuDich.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblThoiGian_KyHieuDich.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             lblThoiGian_KyHieuDich.ForeColor = Color.BlueViolet;
             lblThoiGian_KyHieuDich.Location = new Point(786, 0);
             lblThoiGian_KyHieuDich.Margin = new Padding(1, 0, 1, 0);
             lblThoiGian_KyHieuDich.Name = "lblThoiGian_KyHieuDich";
             lblThoiGian_KyHieuDich.Padding = new Padding(0, 0, 4, 3);
-            lblThoiGian_KyHieuDich.Size = new Size(34, 53);
+            lblThoiGian_KyHieuDich.Size = new Size(34, 52);
             lblThoiGian_KyHieuDich.TabIndex = 1;
-            lblThoiGian_KyHieuDich.TextAlign = ContentAlignment.BottomCenter;
+            lblThoiGian_KyHieuDich.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlThoiGian_Phu
             // 
             pnlThoiGian_Phu.AutoScroll = true;
             pnlThoiGian_Phu.Dock = DockStyle.Fill;
             pnlThoiGian_Phu.FlowDirection = FlowDirection.TopDown;
-            pnlThoiGian_Phu.Location = new Point(1, 439);
+            pnlThoiGian_Phu.Location = new Point(1, 429);
             pnlThoiGian_Phu.Margin = new Padding(1, 3, 1, 3);
             pnlThoiGian_Phu.Name = "pnlThoiGian_Phu";
             pnlThoiGian_Phu.Padding = new Padding(7, 7, 7, 0);
-            pnlThoiGian_Phu.Size = new Size(820, 432);
+            pnlThoiGian_Phu.Size = new Size(820, 420);
             pnlThoiGian_Phu.TabIndex = 2;
             pnlThoiGian_Phu.WrapContents = false;
+            // 
+            // tableLayoutPanel13
+            // 
+            tableLayoutPanel13.ColumnCount = 3;
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel13.Controls.Add(ucBanPhim4, 1, 1);
+            tableLayoutPanel13.Dock = DockStyle.Fill;
+            tableLayoutPanel13.Location = new Point(0, 0);
+            tableLayoutPanel13.Name = "tableLayoutPanel13";
+            tableLayoutPanel13.RowCount = 3;
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel13.Size = new Size(819, 852);
+            tableLayoutPanel13.TabIndex = 1;
+            // 
+            // ucBanPhim4
+            // 
+            ucBanPhim4.Location = new Point(166, 173);
+            ucBanPhim4.Name = "ucBanPhim4";
+            ucBanPhim4.Size = new Size(485, 505);
+            ucBanPhim4.TabIndex = 0;
             // 
             // frmChuyenDoiDonVi
             // 
@@ -1913,6 +2167,7 @@
             tabChuyenDoi.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
@@ -1927,8 +2182,10 @@
             splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer3).EndInit();
             splitContainer3.ResumeLayout(false);
+            tableLayoutPanel10.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             splitContainer4.Panel1.ResumeLayout(false);
+            splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer4).EndInit();
             splitContainer4.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
@@ -1944,8 +2201,10 @@
             splitContainer8.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer8).EndInit();
             splitContainer8.ResumeLayout(false);
+            tableLayoutPanel11.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             splitContainer5.Panel1.ResumeLayout(false);
+            splitContainer5.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer5).EndInit();
             splitContainer5.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
@@ -1960,8 +2219,10 @@
             splitContainer11.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer11).EndInit();
             splitContainer11.ResumeLayout(false);
+            tableLayoutPanel12.ResumeLayout(false);
             tabPage4.ResumeLayout(false);
             splitContainer6.Panel1.ResumeLayout(false);
+            splitContainer6.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer6).EndInit();
             splitContainer6.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
@@ -1976,8 +2237,10 @@
             splitContainer10.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer10).EndInit();
             splitContainer10.ResumeLayout(false);
+            tableLayoutPanel17.ResumeLayout(false);
             tabPage5.ResumeLayout(false);
             splitContainer12.Panel1.ResumeLayout(false);
+            splitContainer12.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer12).EndInit();
             splitContainer12.ResumeLayout(false);
             tableLayoutPanel6.ResumeLayout(false);
@@ -1992,8 +2255,10 @@
             splitContainer17.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer17).EndInit();
             splitContainer17.ResumeLayout(false);
+            tableLayoutPanel16.ResumeLayout(false);
             tabPage6.ResumeLayout(false);
             splitContainer13.Panel1.ResumeLayout(false);
+            splitContainer13.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer13).EndInit();
             splitContainer13.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
@@ -2008,8 +2273,10 @@
             splitContainer19.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer19).EndInit();
             splitContainer19.ResumeLayout(false);
+            tableLayoutPanel15.ResumeLayout(false);
             tabPage7.ResumeLayout(false);
             splitContainer14.Panel1.ResumeLayout(false);
+            splitContainer14.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer14).EndInit();
             splitContainer14.ResumeLayout(false);
             tableLayoutPanel8.ResumeLayout(false);
@@ -2024,8 +2291,10 @@
             splitContainer21.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer21).EndInit();
             splitContainer21.ResumeLayout(false);
+            tableLayoutPanel14.ResumeLayout(false);
             tabPage8.ResumeLayout(false);
             splitContainer15.Panel1.ResumeLayout(false);
+            splitContainer15.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer15).EndInit();
             splitContainer15.ResumeLayout(false);
             tableLayoutPanel9.ResumeLayout(false);
@@ -2040,6 +2309,7 @@
             splitContainer23.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer23).EndInit();
             splitContainer23.ResumeLayout(false);
+            tableLayoutPanel13.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -2155,5 +2425,20 @@
         private TextBox txtThoiGian_KetQua;
         private Label lblThoiGian_KyHieuDich;
         private FlowLayoutPanel pnlThoiGian_Phu;
+        private TableLayoutPanel tableLayoutPanel10;
+        private TableLayoutPanel tableLayoutPanel11;
+        private ucBanPhim ucBanPhim2;
+        private TableLayoutPanel tableLayoutPanel12;
+        private ucBanPhim ucBanPhim3;
+        private TableLayoutPanel tableLayoutPanel17;
+        private ucBanPhim ucBanPhim8;
+        private TableLayoutPanel tableLayoutPanel16;
+        private ucBanPhim ucBanPhim7;
+        private TableLayoutPanel tableLayoutPanel15;
+        private ucBanPhim ucBanPhim6;
+        private TableLayoutPanel tableLayoutPanel14;
+        private ucBanPhim ucBanPhim5;
+        private TableLayoutPanel tableLayoutPanel13;
+        private ucBanPhim ucBanPhim4;
     }
 }
