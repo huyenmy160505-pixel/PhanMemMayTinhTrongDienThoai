@@ -467,70 +467,72 @@ namespace PhanMemMayTinhTrongDienThoai
         // Trong frmMainCalculator.cs
 
         // CẬP NHẬT LẠI HÀM TÍNH TOÁN (PHIÊN BẢN SỬA LỖI e^ VÀ ASINH)
+        // =========================================================
+        // BỘ NÃO TÍNH TOÁN (PHIÊN BẢN ĐÃ SẮP XẾP LẠI THỨ TỰ ƯU TIÊN)
+        // =========================================================
         private double TinhGiaTriBieuThuc(string bieuThuc)
         {
             string s = bieuThuc;
 
-            // 1. QUY ĐỔI MŨ ĐẶC BIỆT THÀNH HÀM (Để xử lý được ngoặc)
-            s = s.Replace("e^", "Exp");      // e^(3) -> Exp(3)
-            s = s.Replace("2^", "PowTwo");   // 2^(3) -> PowTwo(3)
+            // 1. QUY ĐỔI MŨ ĐẶC BIỆT
+            s = s.Replace("e^", "Exp");
+            s = s.Replace("2^", "PowTwo");
 
-            // 2. Chuẩn hóa các ký tự khác
+            // 2. CHUẨN HÓA KÝ TỰ (Trừ e và pi để lại xử lý cuối)
             s = s.Replace(",", ".")
                  .Replace("×", "*")
                  .Replace("÷", "/")
-                 .Replace("%", "*0.01")
-                 .Replace("π", Math.PI.ToString()) // Thay số Pi
-                 .Replace("e", Math.E.ToString()); // Thay số e
+                 .Replace("%", "*0.01");
 
-            // 3. Xử lý Giai thừa (!)
+            // 3. XỬ LÝ GIAI THỪA
             s = XuLyGiaiThua(s);
 
-            // --- Nhóm Mũ đặc biệt ---
-            s = XuLyHam(s, "Exp", x => Math.Exp(x));           // Hàm e^x
-            s = XuLyHam(s, "PowTwo", x => Math.Pow(2, x));     // Hàm 2^x
+            // =========================================================
+            // QUAN TRỌNG: PHẢI XỬ LÝ HÀM TÊN DÀI TRƯỚC -> TÊN NGẮN SAU
+            // =========================================================
 
-            // 5. Xử lý Lượng giác thường
-            s = XuLyHam(s, "sin", x => isRadian ? Math.Sin(x) : Math.Sin(x * Math.PI / 180));
-            s = XuLyHam(s, "cos", x => isRadian ? Math.Cos(x) : Math.Cos(x * Math.PI / 180));
-            s = XuLyHam(s, "tan", x => isRadian ? Math.Tan(x) : Math.Tan(x * Math.PI / 180));
+            // --- Ưu tiên 1: Hàm Mũ & Hyperbolic Ngược (Tên dài nhất) ---
+            s = XuLyHam(s, "Exp", x => Math.Exp(x));
+            s = XuLyHam(s, "PowTwo", x => Math.Pow(2, x));
 
-            // 6. Xử lý Lượng giác ngược
+            // Dùng công thức Logarit cho Hyperbolic ngược (để không bị lỗi trên máy cũ)
+            s = XuLyHam(s, "asinh", x => Math.Log(x + Math.Sqrt(x * x + 1)));
+            s = XuLyHam(s, "acosh", x => Math.Log(x + Math.Sqrt(x * x - 1)));
+            s = XuLyHam(s, "atanh", x => 0.5 * Math.Log((1 + x) / (1 - x)));
+
+            // --- Ưu tiên 2: Hyperbolic & Lượng giác Ngược (Tên trung bình) ---
+            // (Phải xử lý đám này trước khi xử lý sin, cos, tan)
             s = XuLyHam(s, "asin", x => isRadian ? Math.Asin(x) : Math.Asin(x) * 180 / Math.PI);
             s = XuLyHam(s, "acos", x => isRadian ? Math.Acos(x) : Math.Acos(x) * 180 / Math.PI);
             s = XuLyHam(s, "atan", x => isRadian ? Math.Atan(x) : Math.Atan(x) * 180 / Math.PI);
 
-            // 7. Xử lý Hyperbolic
             s = XuLyHam(s, "sinh", x => Math.Sinh(x));
             s = XuLyHam(s, "cosh", x => Math.Cosh(x));
             s = XuLyHam(s, "tanh", x => Math.Tanh(x));
 
-            // 8. Xử lý HYPERBOLIC NGƯỢC (Đảm bảo logic Logarit thay thế nếu lỗi)
-            try
-            {
-                s = XuLyHam(s, "asinh", x => Math.Asinh(x));
-                s = XuLyHam(s, "acosh", x => Math.Acosh(x));
-                s = XuLyHam(s, "atanh", x => Math.Atanh(x));
-            }
-            catch
-            {
-                // Công thức thay thế cho .NET cũ
-                s = XuLyHam(s, "asinh", x => Math.Log(x + Math.Sqrt(x * x + 1)));
-                s = XuLyHam(s, "acosh", x => Math.Log(x + Math.Sqrt(x * x - 1)));
-                s = XuLyHam(s, "atanh", x => 0.5 * Math.Log((1 + x) / (1 - x)));
-            }
 
-            // 9. Xử lý Toán cao cấp khác
+            // --- Ưu tiên 3: Lượng giác thường (Tên ngắn nhất) ---
+            // (Đặt ở đây để không ăn nhầm vào chữ "sin" của "asin")
+
+            s = XuLyHam(s, "sin", x => isRadian ? Math.Sin(x) : Math.Sin(x * Math.PI / 180));
+            s = XuLyHam(s, "cos", x => isRadian ? Math.Cos(x) : Math.Cos(x * Math.PI / 180));
+            s = XuLyHam(s, "tan", x => isRadian ? Math.Tan(x) : Math.Tan(x * Math.PI / 180));
+
+            // --- Ưu tiên 4: Các hàm khác ---
             s = XuLyHam(s, "√", x => Math.Sqrt(x));
             s = XuLyHam(s, "∛", x => Math.Cbrt(x));
             s = XuLyHam(s, "log", x => Math.Log10(x));
             s = XuLyHam(s, "ln", x => Math.Log(x));
             s = XuLyHam(s, "Abs", x => Math.Abs(x));
 
-            // 10. Xử lý Mũ (^) thường (Ví dụ 2^3)
+            // 4. SAU CÙNG MỚI THAY THẾ HẰNG SỐ (Để tránh hỏng tên hàm)
+            s = s.Replace("π", Math.PI.ToString());
+            s = s.Replace("e", Math.E.ToString());
+
+            // 5. Xử lý Mũ thường (^)
             s = XuLyPhepMu(s);
 
-            // 11. Tính toán cuối cùng
+            // 6. Tính toán
             DataTable dt = new DataTable();
             var kq = dt.Compute(s, "");
             return Convert.ToDouble(kq);
